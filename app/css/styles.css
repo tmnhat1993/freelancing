@@ -8,7 +8,7 @@
   note: All CSS3 Properties are being supported by Safari 5
   more info: http://www.findmebyip.com/litmus/#css3-properties
 ------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0; }
@@ -3203,7 +3203,7 @@ body, html {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #6e6e6e; }
+  color: #586269; }
   @media only screen and (max-width: 1160px) {
     body, html {
       font-size: 15px; } }
@@ -3214,6 +3214,58 @@ body, html {
     body, html {
       font-size: 12px; } }
 
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', serif;
-  line-height: 1.75em; }
+* {
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.txt-bold {
+  font-weight: 900; }
+
+.txt-light {
+  font-weight: 300; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  color: #fff;
+  height: 80px; }
+  header * {
+    color: inherit; }
+
+.banner {
+  height: 100vh;
+  background-image: url("../img/home-2.png");
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  .banner .banner-main-content {
+    color: #fff;
+    max-width: 861px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-35%); }
+
+.section-main {
+  padding: 60px 0; }
+  .section-main .heading-row {
+    text-align: center; }
+    .section-main .heading-row h2 {
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 47px; }
+    .section-main .heading-row p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 25px; }

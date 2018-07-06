@@ -1,0 +1,18 @@
+.banner{
+  height: 100vh;
+  background-image: url('../img/home-2.png');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  .banner-main-content{
+    color: $white;
+    max-width: 861px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-35%);
+  }
+}

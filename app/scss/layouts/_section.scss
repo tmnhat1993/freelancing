@@ -1,6 +1,10 @@
 .section-main{
   padding: 60px 0;
 
+  &.bg-gray{
+    background-color: #f7fafb !important;
+  }
+
   .heading-row{
     text-align: center;
 

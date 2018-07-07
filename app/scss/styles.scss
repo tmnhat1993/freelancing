@@ -7,10 +7,17 @@
 
 // Base
 @import "base/typography";
+@import "base/bs-override";
 
 // Layout
 @import "layouts/header";
 @import "layouts/banner";
 @import "layouts/section";
+@import "layouts/cards";
+@import "layouts/footer";
+
+// Pages
+@import "pages/index";
+
 
 

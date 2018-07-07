@@ -10,7 +10,11 @@ export default class MainScript {
 
   /* ============ EVENTS ===========*/
   bindEvent(){
-
+    $('.carousel').carousel({
+      interval: 3000,
+      keyboard: true,
+      pause: 'hover',
+    });
   }
 
   /* =========== METHODS ========== */

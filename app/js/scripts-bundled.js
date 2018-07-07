@@ -120,7 +120,13 @@ function () {
 
   _createClass(MainScript, [{
     key: "bindEvent",
-    value: function bindEvent() {}
+    value: function bindEvent() {
+      $('.carousel').carousel({
+        interval: 3000,
+        keyboard: true,
+        pause: 'hover'
+      });
+    }
     /* =========== METHODS ========== */
 
   }]);

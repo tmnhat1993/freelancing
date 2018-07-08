@@ -3312,6 +3312,9 @@ a {
   .container {
     max-width: 1200px; } }
 
+.dropdown-menu[aria-expanded="true"] {
+  display: block; }
+
 header {
   position: fixed;
   top: 0;
@@ -3353,6 +3356,19 @@ header {
       .banner .banner-main-content .caption .caption-inside .form-group {
         margin-top: 40px;
         max-width: 460px; }
+        .banner .banner-main-content .caption .caption-inside .form-group.form-group-select2 {
+          height: 48px; }
+          .banner .banner-main-content .caption .caption-inside .form-group.form-group-select2 .input-group {
+            height: 48px;
+            margin: 0 !important; }
+            .banner .banner-main-content .caption .caption-inside .form-group.form-group-select2 .input-group button {
+              background-color: #fff; }
+        .banner .banner-main-content .caption .caption-inside .form-group #post-job-btn {
+          background-color: #2e8ae1;
+          color: #fff;
+          border-color: #2e8ae1;
+          padding-left: 44px;
+          padding-right: 44px; }
 
 .section-main {
   padding: 60px 0; }

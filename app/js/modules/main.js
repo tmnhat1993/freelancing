@@ -17,7 +17,7 @@ export default class MainScript {
     });
 
     $('.selectpicker').selectpicker({
-      size: 4,
+      width: 'fit',
     });
   }
 

@@ -127,7 +127,7 @@ function () {
         pause: 'hover'
       });
       $('.selectpicker').selectpicker({
-        size: 4
+        width: 'fit'
       });
     }
     /* =========== METHODS ========== */

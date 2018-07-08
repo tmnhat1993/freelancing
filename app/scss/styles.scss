@@ -1,3 +1,6 @@
+// Core Basic
+@import "layouts/main";
+
 // Variables + Mixins + Functions
 @import "helpers/variables";
 
@@ -18,9 +21,11 @@
 
 // Components
 @import "components/nav";
+@import "components/forms";
 
 // Pages
 @import "pages/index";
+@import "pages/register";
 
 
 

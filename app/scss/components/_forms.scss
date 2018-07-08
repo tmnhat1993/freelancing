@@ -1,0 +1,49 @@
+.radio-style [type="radio"]:not(:checked)+label, .radio-style [type="radio"]:checked+label {
+  position: relative;
+  padding-left: 30px;
+  padding-top: 0;
+  cursor: pointer;
+  margin: 0;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.radio-style [type="radio"]:not(:checked)+label:before, .radio-style [type="radio"]:checked+label:before {
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  font-family: 'fontawesome';
+  font-size: 20px;
+  line-height: 20px;
+  content: "\f10c";
+}
+
+.radio-style [type="radio"]:checked+label:before {
+  content: "\f05d";
+  color: #2e8ae1;
+}
+
+.radio-style [type="radio"]:not(:checked), .radio-style [type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+.form .form-control.checkbox-style, .form .form-control.radio-style {
+  padding: 0;
+  border-color: transparent;
+  height: auto;
+  background-color: transparent;
+}
+
+.radio-style{
+  border:none;
+}
+
+form {
+  label {
+    color: #4e4d4d;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+}

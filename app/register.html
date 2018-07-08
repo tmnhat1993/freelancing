@@ -8,13 +8,557 @@
 
     <!-- Bootstrap Stylesheet Reference -->
     <link rel="stylesheet" href="css/vendors/jquery-ui.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
 
-    <link rel="stylesheet" href="css/styles.css" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/vendors/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Main stylesheet Reference -->
 
 </head>
-<body>
+<body class="pt-8">
+
+<!-- NAVIGATION -->
+<header id="header" class="fixed-top transparent over">
+    <!-- Container -->
+    <div class="container">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-header navbar-mainmenu navbar-expand-lg">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img class="navbar-brand-white" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo.png" alt="freelancerViet">
+                <img class="navbar-brand-normal" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo-2.png" alt="freelancerViet">
+            </a>
+            <!-- Logo -->
+
+            <!-- Menu icon -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu icon -->
+
+            <!-- Collapse Menu -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Main Menu -->
+                <ul class="navbar-nav mr-auto pl-lg-5">
+
+                    <!-- Mobile Login Menu -->
+                    <li class="multi-childs show-mobile">
+                        <a href="https://freelancerviet.vn/dang-ky.html"><span>Đăng ký</span></a>
+                        <span>|</span>
+                        <a href="https://freelancerviet.vn/dang-nhap.html"><span>Đăng nhập</span></a>
+                    </li>
+                    <!-- Mobile Login Menu -->
+
+                    <!-- Main Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="">ĐĂNG VIỆC</span>
+                        </a>
+                    </li><!-- Nav item -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="">TÌM FREELANCER</span>
+                        </a>
+                    </li><!-- Nav Item -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="">TÌM VIỆC LÀM THÊM</span>
+                        </a>
+                    </li><!-- Nav Item -->
+
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">
+                            <span class="">DỊCH VỤ TRỌN GÓI</span>
+                        </a>
+                    </li><!-- Nav Item -->
+                    <!-- Main Menu -->
+
+                    <!-- Menu Login -->
+                    <li class="multi-childs show-mobile nav-item language-mobile">
+                        <a class="nav-link active" href="#">
+                            <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span>
+                        </a>
+                        <span>|</span>
+                        <a class="nav-link " href="#">
+                            <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span>
+                        </a>
+                    </li><!-- Menu Login -->
+                </ul>
+
+                <ul class="navbar-nav ">
+                    <li class="multi-childs hide-mobile">
+                        <a href="https://freelancerviet.vn/dang-ky.html"><span>Đăng ký</span></a>
+                        <span>|</span>
+                        <a href="https://freelancerviet.vn/dang-nhap.html"><span>Đăng nhập</span></a>
+                    </li>					                        <li class="dropdown dropdown-right language dropdown-hover hide-mobile">
+                    <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">
+                        <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu " role="menu" style="width: 200px;">
+                        <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/vi.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span></a></li>
+                        <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/en.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span></a></li>
+                    </ul>					    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Container -->
+</header>
+<!-- NAVIGATION -->
+
+<section class="section-main section-register bg-gray">
+    <div class="container">
+        <!-- Registration Form -->
+        <div class="reg-container m-auto">
+            <!-- Title -->
+            <h1 class="page-title mb-4">Đăng ký tài khoản</h1>
+
+            <!-- Form Element -->
+            <form class="reg-form">
+                <div class="form-group form-inline form-account-type">
+                    <lable class="form-control-label">Bạn là:</lable>
+                    <span class="radio-style form-control">
+                <input type="radio" name="type" value="2" checked="checked" id="type_2" label="Nhà tuyển dụng"  />
+                            <label for="type_2">Nhà tuyển dụng</label>
+            </span>
+                    <span class="text-muted">hay</span>                        <span class="radio-style form-control">
+                <input type="radio" name="type" value="1" id="type_1" label="Freelancer"  />
+                            <label for="type_1">Freelancer</label>
+            </span>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group ">
+                            <label class="form-control-label">Họ <small class="form-control-required">*</small></label>
+                            <input type="text" name="lastname" value="" id="lastname" class="form-control required" data-validate-hide-message="1" data-rule-required="true" required="true" label="Họ"  />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group ">
+                            <label class="form-control-label">Tên và chữ lót <small class="form-control-required">*</small></label>
+                            <input type="text" name="firstname" value="" id="firstname" class="form-control required" data-validate-hide-message="1" data-rule-required="true" required="true" label="Tên và chữ lót"  />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="form-control-label">Email <small class="form-control-required">*</small></label>
+                    <input type="email" name="email" value="" id="email" class="form-control required" data-validate-hide-message="1" data-rule-required="true" data-rule-email="true" required="true" label="Email"  />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label">Điện thoại di động <small class="form-control-required">*</small></label>
+                    <div class="form-inline">
+                        <select name="phone_country_code"
+                                id="phone_country_code"
+                                class="form-control required"
+                                required="true"
+                                label="Mã nước"
+                                text="Mã nước">
+                            <option value="0">+0</option>
+                            <option value="1">+1</option>
+                            <option value="7">+7</option>
+                            <option value="20">+20</option>
+                            <option value="27">+27</option>
+                            <option value="30">+30</option>
+                            <option value="31">+31</option>
+                            <option value="32">+32</option>
+                            <option value="33">+33</option>
+                            <option value="34">+34</option>
+                            <option value="36">+36</option>
+                            <option value="39">+39</option>
+                            <option value="40">+40</option>
+                            <option value="41">+41</option>
+                            <option value="43">+43</option>
+                            <option value="44">+44</option>
+                            <option value="45">+45</option>
+                            <option value="46">+46</option>
+                            <option value="47">+47</option>
+                            <option value="48">+48</option>
+                            <option value="49">+49</option>
+                            <option value="51">+51</option>
+                            <option value="52">+52</option>
+                            <option value="53">+53</option>
+                            <option value="54">+54</option>
+                            <option value="55">+55</option>
+                            <option value="56">+56</option>
+                            <option value="57">+57</option>
+                            <option value="58">+58</option>
+                            <option value="60">+60</option>
+                            <option value="61">+61</option>
+                            <option value="62">+62</option>
+                            <option value="63">+63</option>
+                            <option value="64">+64</option>
+                            <option value="65">+65</option>
+                            <option value="66">+66</option>
+                            <option value="70">+70</option>
+                            <option value="81">+81</option>
+                            <option value="82">+82</option>
+                            <option value="84" selected="selected">+84</option>
+                            <option value="86">+86</option>
+                            <option value="90">+90</option>
+                            <option value="91">+91</option>
+                            <option value="92">+92</option>
+                            <option value="93">+93</option>
+                            <option value="94">+94</option>
+                            <option value="95">+95</option>
+                            <option value="98">+98</option>
+                            <option value="211">+211</option>
+                            <option value="212">+212</option>
+                            <option value="213">+213</option>
+                            <option value="216">+216</option>
+                            <option value="218">+218</option>
+                            <option value="220">+220</option>
+                            <option value="221">+221</option>
+                            <option value="222">+222</option>
+                            <option value="223">+223</option>
+                            <option value="224">+224</option>
+                            <option value="225">+225</option>
+                            <option value="226">+226</option>
+                            <option value="227">+227</option>
+                            <option value="228">+228</option>
+                            <option value="229">+229</option>
+                            <option value="230">+230</option>
+                            <option value="231">+231</option>
+                            <option value="232">+232</option>
+                            <option value="233">+233</option>
+                            <option value="234">+234</option>
+                            <option value="235">+235</option>
+                            <option value="236">+236</option>
+                            <option value="237">+237</option>
+                            <option value="238">+238</option>
+                            <option value="239">+239</option>
+                            <option value="240">+240</option>
+                            <option value="241">+241</option>
+                            <option value="242">+242</option>
+                            <option value="244">+244</option>
+                            <option value="245">+245</option>
+                            <option value="246">+246</option>
+                            <option value="248">+248</option>
+                            <option value="249">+249</option>
+                            <option value="250">+250</option>
+                            <option value="251">+251</option>
+                            <option value="252">+252</option>
+                            <option value="253">+253</option>
+                            <option value="254">+254</option>
+                            <option value="255">+255</option>
+                            <option value="256">+256</option>
+                            <option value="257">+257</option>
+                            <option value="258">+258</option>
+                            <option value="260">+260</option>
+                            <option value="261">+261</option>
+                            <option value="262">+262</option>
+                            <option value="263">+263</option>
+                            <option value="264">+264</option>
+                            <option value="265">+265</option>
+                            <option value="266">+266</option>
+                            <option value="267">+267</option>
+                            <option value="268">+268</option>
+                            <option value="269">+269</option>
+                            <option value="290">+290</option>
+                            <option value="291">+291</option>
+                            <option value="297">+297</option>
+                            <option value="298">+298</option>
+                            <option value="299">+299</option>
+                            <option value="350">+350</option>
+                            <option value="351">+351</option>
+                            <option value="352">+352</option>
+                            <option value="353">+353</option>
+                            <option value="354">+354</option>
+                            <option value="355">+355</option>
+                            <option value="356">+356</option>
+                            <option value="357">+357</option>
+                            <option value="358">+358</option>
+                            <option value="359">+359</option>
+                            <option value="370">+370</option>
+                            <option value="371">+371</option>
+                            <option value="372">+372</option>
+                            <option value="373">+373</option>
+                            <option value="374">+374</option>
+                            <option value="375">+375</option>
+                            <option value="376">+376</option>
+                            <option value="377">+377</option>
+                            <option value="378">+378</option>
+                            <option value="380">+380</option>
+                            <option value="381">+381</option>
+                            <option value="382">+382</option>
+                            <option value="385">+385</option>
+                            <option value="386">+386</option>
+                            <option value="387">+387</option>
+                            <option value="389">+389</option>
+                            <option value="420">+420</option>
+                            <option value="421">+421</option>
+                            <option value="423">+423</option>
+                            <option value="500">+500</option>
+                            <option value="501">+501</option>
+                            <option value="502">+502</option>
+                            <option value="503">+503</option>
+                            <option value="504">+504</option>
+                            <option value="505">+505</option>
+                            <option value="506">+506</option>
+                            <option value="507">+507</option>
+                            <option value="508">+508</option>
+                            <option value="509">+509</option>
+                            <option value="590">+590</option>
+                            <option value="591">+591</option>
+                            <option value="592">+592</option>
+                            <option value="593">+593</option>
+                            <option value="594">+594</option>
+                            <option value="595">+595</option>
+                            <option value="596">+596</option>
+                            <option value="597">+597</option>
+                            <option value="598">+598</option>
+                            <option value="599">+599</option>
+                            <option value="670">+670</option>
+                            <option value="672">+672</option>
+                            <option value="673">+673</option>
+                            <option value="674">+674</option>
+                            <option value="675">+675</option>
+                            <option value="676">+676</option>
+                            <option value="677">+677</option>
+                            <option value="678">+678</option>
+                            <option value="679">+679</option>
+                            <option value="680">+680</option>
+                            <option value="681">+681</option>
+                            <option value="682">+682</option>
+                            <option value="683">+683</option>
+                            <option value="684">+684</option>
+                            <option value="686">+686</option>
+                            <option value="687">+687</option>
+                            <option value="688">+688</option>
+                            <option value="689">+689</option>
+                            <option value="690">+690</option>
+                            <option value="691">+691</option>
+                            <option value="692">+692</option>
+                            <option value="850">+850</option>
+                            <option value="852">+852</option>
+                            <option value="853">+853</option>
+                            <option value="855">+855</option>
+                            <option value="856">+856</option>
+                            <option value="880">+880</option>
+                            <option value="886">+886</option>
+                            <option value="960">+960</option>
+                            <option value="961">+961</option>
+                            <option value="962">+962</option>
+                            <option value="963">+963</option>
+                            <option value="964">+964</option>
+                            <option value="965">+965</option>
+                            <option value="966">+966</option>
+                            <option value="967">+967</option>
+                            <option value="968">+968</option>
+                            <option value="970">+970</option>
+                            <option value="971">+971</option>
+                            <option value="972">+972</option>
+                            <option value="973">+973</option>
+                            <option value="974">+974</option>
+                            <option value="975">+975</option>
+                            <option value="976">+976</option>
+                            <option value="977">+977</option>
+                            <option value="992">+992</option>
+                            <option value="994">+994</option>
+                            <option value="995">+995</option>
+                            <option value="996">+996</option>
+                            <option value="998">+998</option>
+                            <option value="1242">+1242</option>
+                            <option value="1246">+1246</option>
+                            <option value="1264">+1264</option>
+                            <option value="1268">+1268</option>
+                            <option value="1284">+1284</option>
+                            <option value="1340">+1340</option>
+                            <option value="1345">+1345</option>
+                            <option value="1441">+1441</option>
+                            <option value="1473">+1473</option>
+                            <option value="1649">+1649</option>
+                            <option value="1664">+1664</option>
+                            <option value="1670">+1670</option>
+                            <option value="1671">+1671</option>
+                            <option value="1684">+1684</option>
+                            <option value="1758">+1758</option>
+                            <option value="1767">+1767</option>
+                            <option value="1784">+1784</option>
+                            <option value="1787">+1787</option>
+                            <option value="1809">+1809</option>
+                            <option value="1868">+1868</option>
+                            <option value="1869">+1869</option>
+                            <option value="1876">+1876</option>
+                            <option value="7370">+7370</option>
+                        </select>
+                        <input type="tel" name="phone" value="" id="phone" class="form-control required ml-2" data-validate-hide-message="1" data-rule-required="true" data-rule-number="true" required="true" label="Điện thoại di động"  />
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label class="form-control-label">Mật khẩu (ít nhất 8 ký tự) <small class="form-control-required">*</small></label>
+                    <input type="password" name="password" value="" id="password" class="form-control required" data-validate-hide-message="1" data-rule-required="true" data-rule-minlength="8" data-rule-maxlength="20" required="true" label="Mật khẩu (ít nhất 8 ký tự)"  />
+                </div>
+                <div class="form-group ">
+                    <label class="form-control-label">Nhập lại mật khẩu <small class="form-control-required">*</small></label>
+                    <input type="password" name="confirm_password" value="" id="confirm_password" class="form-control required" data-validate-hide-message="1" data-rule-required="true" data-rule-equalTo="#password" required="true" label="Nhập lại mật khẩu"  />
+                </div>
+                <div class="form-button">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn btn-lg btn-primary btn-block">ĐĂNG KÝ</button>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="form-helper">
+                                Đã có tài khoản?&nbsp;&nbsp;<a href="https://freelancerviet.vn/dang-nhap.html" class="text-primary">Đăng nhập</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider-text"><span>hoặc</span></div>
+                <div class="auth-social vertical ">
+                    <span>Đăng ký với:</span>
+                    <a href="#" class="social-icon md fb btn-social-login" data-params-type="register" data-provider="facebook"></a>
+                    <a href="#" class="social-icon md gg btn-social-login" data-params-type="register" data-provider="google"></a>
+                    <a href="#" class="social-icon md li btn-social-login btn-linkedin-login" data-params-type="register" data-provider="linkedin"></a>
+                </div>
+                <p class="form-helper">
+                    Thông qua việc tạo tài khoản, tôi đồng ý với các <a target="_blank" href="https://freelancerviet.vn/dieu-khoan-su-dung.html" class="text-primary">Điều khoản sử dụng</a> và <a target="_blank" href="https://freelancerviet.vn/chinh-sach-bao-mat.html" class="text-primary">Chính sách bảo mật</a> của freelancerViet                </p>
+                <input type="hidden" name="redirect" value="dHJhbmctY2h1" id="redirect"  />
+                <input type="hidden" name="_token" value="62edd94fb7504e6a839a1435327c098a"  />
+                <input type="hidden" name="provider" value=""  />
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="about-footer">
+                        <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo-2.png" alt="">
+                        <div class="socials">
+                            <a target="_blank" href="https://www.facebook.com/FreelancerViet">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a target="_blank" href="https://plus.google.com/u/5/+freelancervietvncongdong">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a>
+                            <a target="_blank" href="https://twitter.com/freelancerViet">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/bct.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="block-menu">
+                                <h3>Công ty</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://freelancerviet.vn/gioi-thieu.html">
+                                            Về chúng tôi                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/press.html">
+                                            Vinh danh trên báo chí                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/danh-sach-doi-tac.html">
+                                            Đối tác                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/blog-ky-nang.html">
+                                            Tin tức cộng đồng                                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="block-menu">
+                                <h3>Khách hàng</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://freelancerviet.vn/dang-viec.html">
+                                            Đăng việc                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/ho-so-freelancer.html">
+                                            Tìm freelancer                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/danh-sach-goi-cong-viec.html">
+                                            Dịch vụ trọn gói                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/nang-cap-tai-khoan.html">
+                                            Bảng giá                                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="block-menu">
+                                <h3>Freelancer</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://freelancerviet.vn/dang-ky.html">
+                                            Đăng ký                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/cong-viec-freelance.html">
+                                            Tìm việc                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/mua-credit.html">
+                                            Bảng giá                                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="block-menu">
+                                <h3>Trợ giúp</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://freelancerviet.vn/tro-giup.html">
+                                            Trợ giúp                                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            Copyright © 2018 freelancerViet Co., Ltd. All Rights Reserved.
+            <div class="links">
+                <a href="https://freelancerviet.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
+                <span class="">|</span>
+                <a href="https://freelancerviet.vn/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER -->
+
+<!-- Scripts Refference -->
+<!-- jQuery-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- jQuery - END -->
+
+<!-- jQuery-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- jQuery - END -->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap-select.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/scripts-bundled.js"></script>
+<!-- Main Script - END -->
+<!-- Scripts Reference - END -->
 
 </body>
 </html>

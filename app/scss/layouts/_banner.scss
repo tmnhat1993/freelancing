@@ -34,6 +34,27 @@
         .form-group {
           margin-top: 40px;
           max-width: 460px;
+
+          &.form-group-select2{
+            height: 48px;
+
+            .input-group{
+              height: 48px;
+              margin: 0 !important;
+
+              button{
+                background-color: $white;
+              }
+            }
+          }
+
+          #post-job-btn{
+            background-color: #2e8ae1;
+            color: #fff;
+            border-color: #2e8ae1;
+            padding-left: 44px;
+            padding-right: 44px;
+          }
         }
       }
     }

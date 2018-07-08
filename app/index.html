@@ -8,7 +8,7 @@
 
     <!-- Bootstrap Stylesheet Reference -->
     <link rel="stylesheet" href="css/vendors/jquery-ui.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/vendors/bootstrap-select.min.css">
@@ -120,12 +120,28 @@
                         <h2>Giải quyết tức thì mọi nhu cầu công việc
                             bởi các freelancer chuyên nghiệp</h2>
                         <p class="txt-medium">Bất kỳ việc gì – Bất kể nơi đâu</p>
-                        <div class="form-group">
-                            <select class="selectpicker" data-live-search="true">
-                                <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
-                                <option data-tokens="mustard">Burger, Shake and a Smile</option>
-                                <option data-tokens="frosting">Sugar, Spice and all things nice</option>
-                            </select>
+                        <div class="form-group form-group-select2">
+                            <div class="input-group mb-3">
+                                <select class="selectpicker form-control" data-live-search="true">
+                                    <optgroup label="Picnic">
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                    </optgroup>
+                                    <optgroup label="Camping">
+                                        <option>Tent</option>
+                                        <option>Flashlight</option>
+                                        <option>Toilet Paper</option>
+                                    </optgroup>
+                                </select>
+                                <div class="input-group-append">
+                                    <button class="input-group-text btn btn-default btn-search btn-category-submit"
+                                            type="button"
+                                            id="post-job-btn">
+                                        ĐĂNG VIỆC
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

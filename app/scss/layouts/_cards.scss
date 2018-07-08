@@ -1,0 +1,67 @@
+.freelancer-card{
+  box-shadow: 0 1px 2px 0 rgba(186,186,186,0.5);
+
+  .card-header{
+    background-color: $white;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .card-body{
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    .name{
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+    }
+
+    .job-title{
+      margin-bottom: 10px;
+      height: 16px;
+      overflow: hidden;
+    }
+  }
+
+  .card-footer{
+    display: flex;
+    background-color: $white;
+
+    .info-group{
+      display: inline-block;
+      text-align: center;
+      font-size: 12px;
+      line-height: 14px;
+
+      .fa{
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 26px;
+      }
+
+      .detail{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.freelancer-avatar{
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+
+  &.avatar-122{
+    width: 122px;
+    height: 122px;
+  }
+
+  &.avatar-165{
+    width: 165px;
+    height: 165px;
+  }
+}

@@ -10,7 +10,15 @@ export default class MainScript {
 
   /* ============ EVENTS ===========*/
   bindEvent(){
+    $('.carousel').carousel({
+      interval: 3000,
+      keyboard: true,
+      pause: 'hover',
+    });
 
+    $('.selectpicker').selectpicker({
+      size: 4,
+    });
   }
 
   /* =========== METHODS ========== */

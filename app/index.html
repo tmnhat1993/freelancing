@@ -10,84 +10,126 @@
     <link rel="stylesheet" href="css/vendors/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/styles.css" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/vendors/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Main stylesheet Reference -->
 
 </head>
 <body>
 
 <!-- NAVIGATION -->
-<header>
-    <nav class="navbar navbar-expand-lg">
+<header id="header" class="fixed-top transparent">
+    <!-- Container -->
     <div class="container">
-        <!-- LOGO -->
-        <a class="navbar-brand" href="#">
-            Logo
-        </a><!-- LOGO -->
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-header navbar-mainmenu navbar-expand-lg">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img class="navbar-brand-white" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo.png" alt="freelancerViet">
+                <img class="navbar-brand-normal" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo-2.png" alt="freelancerViet">
+            </a>
+            <!-- Logo -->
 
-        <!-- COLLAPSE NAVBAR -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-            </ul>
+            <!-- Menu icon -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu icon -->
 
-            <ul class="navbar-nav ">
-                <li class="multi-childs hide-mobile">
-                    <a href="https://freelancerviet.vn/dang-ky.html"><span>Đăng ký</span></a>
-                    <span>|</span>
-                    <a href="https://freelancerviet.vn/dang-nhap.html"><span>Đăng nhập</span></a>
-                </li>					                        <li class="dropdown dropdown-right language dropdown-hover hide-mobile">
-                <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">
-                    <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt="">
-                </a>
-                <ul class="dropdown-menu " role="menu" style="width: 200px; display: none;">
-                    <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/vi.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span></a></li>
-                    <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/en.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span></a></li>
-                </ul>					    </li>
-            </ul>
-        </div><!-- COLLAPSE NAVBAR -->
+            <!-- Collapse Menu -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Main Menu -->
+                <ul class="navbar-nav mr-auto pl-lg-5">
+
+                    <!-- Mobile Login Menu -->
+                    <li class="multi-childs show-mobile">
+                        <a href="https://freelancerviet.vn/dang-ky.html"><span>Đăng ký</span></a>
+                        <span>|</span>
+                        <a href="https://freelancerviet.vn/dang-nhap.html"><span>Đăng nhập</span></a>
+                    </li>
+                    <!-- Mobile Login Menu -->
+
+                    <!-- Main Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="">ĐĂNG VIỆC</span>
+                        </a>
+                    </li><!-- Nav item -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="">TÌM FREELANCER</span>
+                        </a>
+                    </li><!-- Nav Item -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="">TÌM VIỆC LÀM THÊM</span>
+                        </a>
+                    </li><!-- Nav Item -->
+
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">
+                            <span class="">DỊCH VỤ TRỌN GÓI</span>
+                        </a>
+                    </li><!-- Nav Item -->
+                    <!-- Main Menu -->
+
+                    <!-- Menu Login -->
+                    <li class="multi-childs show-mobile nav-item language-mobile">
+                        <a class="nav-link active" href="#">
+                            <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span>
+                        </a>
+                        <span>|</span>
+                        <a class="nav-link " href="#">
+                            <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span>
+                        </a>
+                    </li><!-- Menu Login -->
+                </ul>
+
+                <ul class="navbar-nav ">
+                    <li class="multi-childs hide-mobile">
+                        <a href="https://freelancerviet.vn/dang-ky.html"><span>Đăng ký</span></a>
+                        <span>|</span>
+                        <a href="https://freelancerviet.vn/dang-nhap.html"><span>Đăng nhập</span></a>
+                    </li>					                        <li class="dropdown dropdown-right language dropdown-hover hide-mobile">
+                    <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">
+                        <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu " role="menu" style="width: 200px;">
+                        <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/vi.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span></a></li>
+                        <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/en.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span></a></li>
+                    </ul>					    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
-</nav>
+    <!-- Container -->
 </header>
 <!-- NAVIGATION -->
 
 
 <!-- BANNER -->
 <section class="banner">
-    <!-- Container -->
-    <div class="container">
-        <!-- Banner Main Content -->
         <div class = "banner-main-content">
-            <!-- Heading -->
-            <h1>
-                Giải quyết tức thì mọi nhu cầu công việc bởi các freelancer chuyên nghiệp
-            </h1>
-            <h3>Bất kỳ việc gì – Bất kể nơi đâu</h3>
-            <!-- Heading -->
-
-            <!-- New Job Form -->
-            <div class="new-job-form">
-                <form class="form-inline">
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="inputPassword2" class="sr-only">Password</label>
-                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            <div class="caption">
+                <div class="container">
+                    <div class="caption-inside">
+                        <h2>Giải quyết tức thì mọi nhu cầu công việc
+                            bởi các freelancer chuyên nghiệp</h2>
+                        <p class="txt-medium">Bất kỳ việc gì – Bất kể nơi đâu</p>
+                        <div class="form-group">
+                            <select class="selectpicker" data-live-search="true">
+                                <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                            </select>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
-                </form>
-            </div><!-- New Job Form -->
-        </div><!-- Banner Main Content -->
-    </div><!-- Container -->
+                </div>
+            </div>
 </section>
 <!-- BANNER -->
 
@@ -99,7 +141,7 @@
                 <h2 class="txt-bold">
                     Cách thức hoạt động
                 </h2>
-                <p class="txt-light">
+                <p class="txt-light  mb-5">
                     Bạn sẽ nhanh chóng nhận được báo giá từ những freelancer chuyên nghiệp.
                     <br>
                     Hãy chọn freelancer phù hợp nhất để giao công việc.
@@ -107,10 +149,12 @@
             </div>
         </div>
 
-        <div class="row content-row">
+        <div class="row content-row how-it-work">
             <!-- Content Column item -->
             <div class="col-sm-4 content-col-item">
-                <div class="img-holder"></div>
+                <div class="img-holder">
+                    <img src="img/client_brief.png">
+                </div>
                 <h3>
                     Mô tả yêu cầu công việc
                 </h3>
@@ -119,26 +163,30 @@
 
             <!-- Content Column item -->
             <div class="col-sm-4 content-col-item">
-                <div class="img-holder"></div>
+                <div class="img-holder">
+                    <img src="img/client_consultants.png">
+                </div>
                 <h3>
-                    Mô tả yêu cầu công việc
+                    Thuê freelancer và làm việc
                 </h3>
-                <p>Bằng cách trả lời các câu hỏi theo từng lĩnh vực đã được chúng tôi biên soạn.</p>
+                <p>So sánh các báo giá, hồ sơ sau đó thuê và làm việc với freelancer phù hợp.</p>
             </div><!-- Content Column item -->
 
             <!-- Content Column item -->
             <div class="col-sm-4 content-col-item">
-                <div class="img-holder"></div>
+                <div class="img-holder">
+                    <img src="img/client_paid.png">
+                </div>
                 <h3>
-                    Mô tả yêu cầu công việc
+                    Thanh toán
                 </h3>
-                <p>Bằng cách trả lời các câu hỏi theo từng lĩnh vực đã được chúng tôi biên soạn.</p>
+                <p>Đặt cọc và thanh toán an toàn trên freelancerViet. Tìm hiểu thêm.</p>
             </div><!-- Content Column item -->
 
         </div>
 
-        <div class="row cta-row">
-            <a>ĐĂNG VIỆC NGAY</a>
+        <div class="cta-row">
+            <a href="https://freelancerviet.vn/dang-viec.html" class="btn btn-warning btn-lg">ĐĂNG VIỆC NGAY</a>
         </div>
     </div>
 </section>
@@ -146,86 +194,150 @@
 
 
 <!-- CONTENT -->
-<section class="section-main">
+<section class="section-main bg-gray">
     <div class="container">
+        <!-- Heading row -->
         <div class="row heading-row">
             <div class="col-sm-12">
                 <h2 class="txt-bold">
-                    Cách thức hoạt động
+                    Các freelancers nổi bật
                 </h2>
-                <p>
-                    Bạn sẽ nhanh chóng nhận được báo giá từ những freelancer chuyên nghiệp.
-                    <br>
-                    Hãy chọn freelancer phù hợp nhất để giao công việc.
+                <p class="mb-40">
+                    Chúng tôi đảm bảo bạn sẽ tìm thấy freelancer phù hợp với yêu cầu công việc của bạn dù lớn hay nhỏ.
                 </p>
             </div>
-        </div>
+
+            <div class="col-sm-12 mb-40">
+                <a href="#" class="tag-link lg bg-white">Lập trình</a>
+                <a href="#" class="tag-link lg bg-white">Dạy kèm</a>
+                <a href="#" class="tag-link lg bg-white">Kế toán</a>
+                <a href="#" class="tag-link lg bg-white">Luật</a>
+                <a href="#" class="tag-link lg bg-white">Dịch thuật</a>
+                <a href="#" class="tag-link lg bg-white">Thiết kế kiến trúc</a>
+            </div>
+        </div><!-- Heading row -->
 
         <div class="row content-row">
+
+            <!-- Highlight freelancer column -->
             <div class="col-sm-3">
-                <div class="card">
-                    <div class="image-holder"></div>
-                    <h4>Vũ Quốc Trung</h4>
-                    <p>Lập trình viên PHP</p>
-                    <a>Xem hồ sơ</a>
-                    <div class="card-footer extra-detail">
-                        <div class="extra-content-item">
+                <div class="card freelancer-card">
+                    <div class="card-header">
+                        <img class="freelancer-avatar avatar-122" src="img/char.jpg">
+                    </div>
 
+                    <div class="card-body">
+
+                        <h5 class="name">Nguyễn Trình</h5>
+
+                        <p class="job-title">Web Develop</p>
+
+                        <a href="#">Xem hồ sơ</a>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="info-group">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p class="detail">Hà Nội</p>
                         </div>
-                        <div class="extra-content-item">
 
+                        <div class="info-group ml-auto">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <p class="detail">10 được thuê</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><!-- Highlight freelancer column -->
+
+            <!-- Highlight freelancer column -->
             <div class="col-sm-3">
-                <div class="card">
-                    <div class="image-holder"></div>
-                    <h4>Vũ Quốc Trung</h4>
-                    <p>Lập trình viên PHP</p>
-                    <a>Xem hồ sơ</a>
-                    <div class="card-footer extra-detail">
-                        <div class="extra-content-item">
+                <div class="card freelancer-card">
+                    <div class="card-header">
+                        <img class="freelancer-avatar avatar-122" src="img/char.jpg">
+                    </div>
 
+                    <div class="card-body">
+
+                        <h5 class="name">Nguyễn Trình</h5>
+
+                        <p class="job-title">Web Develop</p>
+
+                        <a href="#">Xem hồ sơ</a>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="info-group">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p class="detail">Hà Nội</p>
                         </div>
-                        <div class="extra-content-item">
 
+                        <div class="info-group ml-auto">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <p class="detail">10 được thuê</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><!-- Highlight freelancer column -->
+
+            <!-- Highlight freelancer column -->
             <div class="col-sm-3">
-                <div class="card">
-                    <div class="image-holder"></div>
-                    <h4>Vũ Quốc Trung</h4>
-                    <p>Lập trình viên PHP</p>
-                    <a>Xem hồ sơ</a>
-                    <div class="card-footer extra-detail">
-                        <div class="extra-content-item">
+                <div class="card freelancer-card">
+                    <div class="card-header">
+                        <img class="freelancer-avatar avatar-122" src="img/char.jpg">
+                    </div>
 
+                    <div class="card-body">
+
+                        <h5 class="name">Nguyễn Trình</h5>
+
+                        <p class="job-title">Web Develop</p>
+
+                        <a href="#">Xem hồ sơ</a>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="info-group">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p class="detail">Hà Nội</p>
                         </div>
-                        <div class="extra-content-item">
 
+                        <div class="info-group ml-auto">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <p class="detail">10 được thuê</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><!-- Highlight freelancer column -->
+
+            <!-- Highlight freelancer column -->
             <div class="col-sm-3">
-                <div class="card">
-                    <div class="image-holder"></div>
-                    <h4>Vũ Quốc Trung</h4>
-                    <p>Lập trình viên PHP</p>
-                    <a>Xem hồ sơ</a>
-                    <div class="card-footer extra-detail">
-                        <div class="extra-content-item">
+                <div class="card freelancer-card">
+                    <div class="card-header">
+                        <img class="freelancer-avatar avatar-122" src="img/char.jpg">
+                    </div>
 
+                    <div class="card-body">
+
+                        <h5 class="name">Nguyễn Trình</h5>
+
+                        <p class="job-title">Web Develop</p>
+
+                        <a href="#">Xem hồ sơ</a>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="info-group">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p class="detail">Hà Nội</p>
                         </div>
-                        <div class="extra-content-item">
 
+                        <div class="info-group ml-auto">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <p class="detail">10 được thuê</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><!-- Highlight freelancer column -->
         </div>
     </div>
 </section>
@@ -242,38 +354,751 @@
                 </h2>
             </div>
         </div>
-        <div class="row row-content">
+        <div class="row row-content testimonial-carousel">
+            <!-- Row -->
+            <div class="col-sm-12">
+                <!-- Bootstrap Carousel -->
+                <div class="carousel slide" data-ride="carousel" id="testimonialCarousel">
+                    <!-- Carousel Container -->
+                    <div class="carousel-inner">
 
+                        <!-- Carousel Item -->
+                        <div class="carousel-item active">
+                            <div class="testimonial-content">
+                                <div class="testimonial-main-content">
+                                    <p>
+                                        Theo dõi sự phát triển của mô hình freelancer tại Việt Nam đã lâu, tôi thật sự nghĩ rằng freelancerViet
+                                        đã tạo ra điều khác biệt và mang lại lợi ích cho cộng đồng startup
+                                    </p>
+                                </div>
+                                <div class="testimonial-image">
+                                    <img class="freelancer-avatar avatar-165" src="img/char2.png">
+                                    <p class="name">
+                                        Hai Ho,
+                                        <span class="text-muted">CEO&Founder Triip.me</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel Item -->
+
+                        <!-- Carousel Item -->
+                        <div class="carousel-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-main-content">
+                                    <p>
+                                        Theo dõi sự phát triển của mô hình freelancer tại Việt Nam đã lâu, tôi thật sự nghĩ rằng freelancerViet
+                                        đã tạo ra điều khác biệt và mang lại lợi ích cho cộng đồng startup
+                                    </p>
+                                </div>
+                                <div class="testimonial-image">
+                                    <img class="freelancer-avatar avatar-165" src="img/char2.png">
+                                    <p class="name">
+                                        Hai Ho,
+                                        <span class="text-muted">CEO&Founder Triip.me</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel Item -->
+
+                        <!-- Carousel Item -->
+                        <div class="carousel-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-main-content">
+                                    <p>
+                                        Theo dõi sự phát triển của mô hình freelancer tại Việt Nam đã lâu, tôi thật sự nghĩ rằng freelancerViet
+                                        đã tạo ra điều khác biệt và mang lại lợi ích cho cộng đồng startup
+                                    </p>
+                                </div>
+                                <div class="testimonial-image">
+                                    <img class="freelancer-avatar avatar-165" src="img/char2.png">
+                                    <p class="name">
+                                        Hai Ho,
+                                        <span class="text-muted">CEO&Founder Triip.me</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel Item -->
+
+                    </div><!-- Carousel Container -->
+
+                    <!-- Carousel Controller -->
+                    <!-- Prev Button -->
+                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <!-- Prev Button -->
+
+                    <!-- Next Button -->
+                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!-- Next Button -->
+                    <!-- Carousel Controller -->
+                </div>
+                <!-- Bootstrap Carousel -->
+
+
+                <div class="col-sm-12 trusted-by">
+                    <a class="brand-link" href="#">
+                        <img class="brand-logo" src="img/TiA.png">
+                    </a>
+                    <a class="brand-link" href="#">
+                        <img class="brand-logo" src="img/tuoitreonline.png">
+                    </a>
+                    <a class="brand-link" href="#">
+                        <img class="brand-logo" src="img/vnnews.png">
+                    </a>
+                    <a class="brand-link" href="#">
+                        <img class="brand-logo" src="img/htv_9.png">
+                    </a>
+                    <a class="brand-link" href="#">
+                        <img class="brand-logo" src="img/sctv4.png">
+                    </a>
+                    <a class="brand-link" href="#">
+                        <img class="brand-logo" src="img/bizlive.png">
+                    </a>
+                    <a class="brand-link" href="#">
+                        <img class="brand-logo" src="img/vietfounder.png">
+                    </a>
+                </div>
+            </div><!-- Row -->
         </div>
     </div>
 </section>
 <!-- CONTENT -->
 
 <!-- CONTENT -->
-<section class="section-main">
+<section class="section-main bg-gray search-for-expert">
+    <!-- Container -->
     <div class="container">
+
+        <!-- Heading Row -->
         <div class="row heading-row">
-            <div class="col-sm-12">
-                <h2>
+            <div class="col-sm-12  mb-50">
+                <h2 class="txt-medium">
                     Tìm kiếm freelancer hàng đầu
                 </h2>
             </div>
-        </div>
-        <div class="row row-content">
+        </div><!-- Heading Row -->
 
-        </div>
-    </div>
+        <!-- Job List -->
+        <ul class="list-unstyled list-jobs row">
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/658-lap-trinh-web.html">Lập trình web</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/659-lap-trinh-wordpress.html">Lập trình wordpress</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/660-lap-trinh-magento.html">Lập trình Magento</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/661-lap-trinh-joomla.html">Lập trình Joomla</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/662-lap-trinh-opencart.html">Lập trình OpenCart</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/663-lap-trinh-php.html">Lập trình php</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/664-lap-trinh-net.html">Lập trình .Net</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/665-lap-trinh-java.html">Lập trình Java</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/666-lap-trinh-ung-dung-di-dong.html">Lập trình ứng dụng di động</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/667-lap-trinh-android.html">Lập trình android</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/668-lap-trinh-windowphone.html">Lập trình windowphone</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/669-lap-trinh-ios.html">Lập trình iOS</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/670-lap-trinh-phan-mem.html">Lập trình phần mềm</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/671-lap-trinh-phonegap.html">Lập trình PhoneGap</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/822-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/839-lap-trinh-prestashop.html">Lập trình Prestashop</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/842-smart-contract.html">Smart contract</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/843-react-native.html">React Native</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/844-reactjs.html">ReactJs</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/846-blockchain.html">Blockchain</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/673-it-support.html">IT Support</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/674-phan-tich-du-lieu-va-bao-cao.html">Phân tích dữ liệu và báo cáo</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/675-database.html">Database</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/676-qatesting.html">QA/Testing</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/677-he-thong-thuong-mai-dien-tu.html">Hệ thống thương mại điện tử</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/678-quan-tri-he-thong.html">Quản trị hệ thống</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/679-quan-ly-website.html">Quản lý website</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/680-quan-ly-du-an.html">Quản lý dự án</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/681-tu-van-bao-mat.html">Tư vấn bảo mật</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/682-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/684-thiet-ke-logo.html">Thiết kế logo</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/685-thiet-ke-website.html">Thiết kế website</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/686-thiet-ke-ung-dung.html">Thiết kế ứng dụng</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/687-thiet-ke-bannerposter.html">Thiết kế banner,poster</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/688-thiet-ke-nhan-hieu-bao-bi.html">Thiết kế nhãn hiệu, bao bì</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/689-thiet-ke-do-hoa.html">Thiết kế đồ họa</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/690-thiet-ke-in-an.html">Thiết kế in ấn</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/691-thiet-ke-infographic.html">Thiết kế infographic</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/692-thiet-ke-thu-moito-roi.html">Thiết kế thư mời,tờ rơi</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/693-thiet-ke-2d--3d.html">Thiết kế 2D , 3D</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/694-thiet-ke-brochure.html">Thiết kế brochure</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/695-thiet-ke-bo-nhan-dien-thuong-hieu.html">Thiết kế bộ nhận diện thương hiệu</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/696-chinh-sua-anh.html">Chỉnh sửa ảnh</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/697-thiet-ke-animationflash-html5.html">Thiết kế animation,flash, html5</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/698-thiet-ke-presentation.html">Thiết kế presentation</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/823-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/701-thiet-ke-noi-thatngoai-that.html">Thiết kế nội thất/ngoại thất</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/702-thiet-ke-kien-truc.html">Thiết kế kiến trúc</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/824-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/704-copywriting.html">Copywriting</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/705-viet-bai-pr.html">Viết bài PR</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/706-bao-va-tap-chi.html">Báo và tạp chí</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/707-blog.html">Blog</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/708-noi-dung-website.html">Nội dung website</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/709-viet-sach.html">Viết sách</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/710-chinh-sua-va-bien-tap-noi-dung.html">Chỉnh sửa và biên tập nội dung</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/711-viet-cv.html">Viết CV</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/712-viet-kich-ban.html">Viết kịch bản</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/713-noi-dung-hoc-thuat.html">Nội dung học thuật</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/714-thong-cao-bao-chi.html">Thông cáo báo chí</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/825-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/845-whitepaper.html">Whitepaper</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/716-dich-thuat.html">Dich thuật</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/717-dich-thuat-tieng-anh.html">Dịch thuật tiếng Anh</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/718-dich-thuat-tieng-phap.html">Dịch thuật tiếng Pháp</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/719-dich-thuat-tieng-trung.html">Dịch thuật tiếng Trung</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/720-dich-thuat-tieng-nhat.html">Dịch thuât tiếng Nhật</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/721-dich-thuat-tieng-y.html">Dịch thuật tiếng ý</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/722-dich-thuat-tieng-thai.html">Dịch thuât tiếng Thái</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/723-dich-thuat-tieng-duc.html">Dịch thuật tiếng đức</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/724-dich-thuat-tieng-han.html">Dịch thuật tiếng Hàn</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/725-dich-thuat-tieng-nga.html">Dịch thuật tiếng Nga</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/826-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/727-seo.html">SEO</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/728-google-adwords.html">Google AdWords</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/729-quang-cao-facebook.html">Quảng cáo facebook</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/730-forum-seeding.html">Forum seeding</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/731-social-seeding.html">Social seeding</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/732-viral-marketing.html">Viral marketing</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/733-quan-ly-fanpage.html">Quản lý fanpage</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/734-social-marketing.html">Social marketing</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/735-influencers--kols.html">Influencers &amp; KOLs</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/827-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/737-quang-cao-cai-dat-ung-dung.html">Quảng cáo cài đặt ứng dụng</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/828-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/739-trade-marketing-marketing-tai-diem-ban-hang.html">Trade Marketing (marketing tại điểm bán hàng)</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/829-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/748-thuc-hien-toan-bo-video-clip.html">Thực hiện toàn bộ video clip</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/749-dung-video.html">Dựng video</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/750-chinh-sua-video.html">Chỉnh sửa video</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/751-quay-phim-su-kien.html">Quay phim sự kiện</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/752-chup-anh-su-kien.html">Chụp ảnh sự kiện</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/753-chup-anh-theo-yeu-cau-rieng.html">Chụp ảnh theo yêu cầu riêng</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/754-chup-anh-cuoi.html">Chụp ảnh cưới</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/755-chup-anh-chan-dung.html">Chụp ảnh chân dung</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/831-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/757-tro-ly.html">Trợ lý</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/758-nhap-lieu.html">Nhập liệu</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/759-tim-nhan-su.html">Tìm nhân sự</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/760-ho-tro-khach-hang.html">Hỗ trợ khách hàng</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/832-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/762-tu-van-luat.html">Tư vấn luật</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/763-dich-vu-thanh-lap-cong-ty.html">Dịch vụ thành lập công ty</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/833-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/765-bao-cao-thue.html">Báo cáo thuế</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/766-tu-van-thue.html">Tư vấn thuế</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/767-cac-van-de-lien-quan-den-thue-va-ke-toan.html">Các vấn đề liên quan đến thuế và kế toán</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/768-thay-doi-thong-tin-tren-giay-phep-dang-ky-kinh-doanh.html">Thay đổi thông tin trên Giấy Phép Đăng Ký Kinh Doanh</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/769-ke-toan-thoi-vu.html">Kế toán thời vụ</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/834-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/771-gia-su-tieng-anh.html">Gia sư tiếng Anh</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/772-gia-su-tieng-viet.html">Gia sư tiếng Việt</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/773-gia-su-tieng-nhat.html">Gia sư tiếng Nhật</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/774-gia-su-tieng-han.html">Gia sư tiếng Hàn</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/775-gia-su-tieng-phap.html">Gia sư tiếng Pháp</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/776-gia-su-tieng-nga.html">Gia sư tiếng Nga</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/777-gia-su-tieng-duc.html">Gia sư tiếng đức</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/778-gia-su-tieng-y.html">Gia sư tiếng ý</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/779-gia-su-tieng-thai-lan.html">Gia sư tiếng thái lan</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/780-gia-su-tieng-trung.html">Gia sư tiếng Trung</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/781-gia-su-toan-hoc.html">Gia sư toán học</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/782-gia-su-vay-ly.html">Gia sư vậy lý</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/783-gia-su-hoa-hoc.html">Gia sư hóa học</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/784-gia-su-sinh-hoc.html">Gia sư sinh học</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/785-gia-su-luyen-thi-dai-hoc.html">Gia sư luyện thi đại học</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/786-gia-su-lap-trinh-php.html">Gia sư lập trình PHP</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/787-gia-su-lap-trinh-net.html">Gia sư lập trình .Net</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/788-gia-su-lap-trinh-html--css.html">Gia sư lập trình HTML &amp; CSS</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/789-gia-su-photoshop.html">Gia sư photoshop</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/790-gia-su-android.html">Gia sư android</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/791-gia-su-winphone.html">Gia sư Winphone</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/792-gia-su-ios.html">Gia sư iOS</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/793-gia-su-lap-trinh-python.html">Gia sư lập trình Python</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/794-gia-su-lap-trinh-java.html">Gia sư lập trình Java</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/795-day-nau-an.html">Dạy nấu ăn</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/796-day-dan-nhac.html">Dạy đàn, nhạc</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/835-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/838-gia-su-do-hoa-3b.html">Gia sư đồ họa 3D</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/841-day-kem-yoga.html">Dạy kèm Yoga</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/798-lap-ke-hoach-va-to-chuc-su-kien-cho-cong-ty.html">Lập kế hoạch và tổ chức sự kiện cho công ty</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/799-lap-ke-hoach-va-to-chuc-su-kien-cho-ca-nhan.html">Lập kế hoạch và tổ chức sự kiện cho cá nhân</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/800-quan-ly-su-kien.html">Quản lý sự kiện</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/801-trang-tri-su-kien.html">Trang trí sự kiện</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/802-thiet-ke-su-kien.html">Thiết kế sự kiện</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/803-cung-cap-trang-thiet-bi-cho-su-kien.html">Cung cấp trang thiết bị cho sự kiện</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/836-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/805-ve-chan-dung.html">Vẽ chân dung</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/699-ve-tay.html">Vẽ tay</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/806-ve-tranh-nghe-thuat.html">Vẽ tranh nghệ thuật</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/807-ve-henna.html">Vẽ Henna</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/808-ve-doodle.html">Vẽ Doodle</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/809-ve-tuong.html">Vẽ tường</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/810-the-loai-khac.html">Thể loại khác</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/812-trang-diem.html">Trang điểm</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/813-stylist.html">Stylist</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/814-ca-sy.html">Ca Sỹ</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/815-nhac-cong.html">Nhạc Công</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/816-nguoi-mau.html">Người mẫu</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/817-ao-thuat-gia.html">Ảo thuật gia</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/818-dancer.html">Dancer</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/819-mc.html">MC</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/820-pb--pg.html">PB &amp; PG</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/821-dj.html">DJ</a>
+            </li>
+            <li class="col-md-3">
+                <a href="https://freelancerviet.vn/dang-viec/837-dich-vu-khac.html">Dịch vụ khác</a>
+            </li>
+        </ul>
+        <!-- Job List -->
+    </div><!-- Container -->
 </section>
 <!-- CONTENT -->
 
 <!-- FOOTER -->
 <footer>
-    <div class="container">
-        <div class="row content-row">
-
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="about-footer">
+                        <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo-2.png" alt="">
+                        <div class="socials">
+                            <a target="_blank" href="https://www.facebook.com/FreelancerViet">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a target="_blank" href="https://plus.google.com/u/5/+freelancervietvncongdong">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a>
+                            <a target="_blank" href="https://twitter.com/freelancerViet">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/bct.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="block-menu">
+                                <h3>Công ty</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://freelancerviet.vn/gioi-thieu.html">
+                                            Về chúng tôi                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/press.html">
+                                            Vinh danh trên báo chí                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/danh-sach-doi-tac.html">
+                                            Đối tác                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/blog-ky-nang.html">
+                                            Tin tức cộng đồng                                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="block-menu">
+                                <h3>Khách hàng</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://freelancerviet.vn/dang-viec.html">
+                                            Đăng việc                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/ho-so-freelancer.html">
+                                            Tìm freelancer                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/danh-sach-goi-cong-viec.html">
+                                            Dịch vụ trọn gói                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/nang-cap-tai-khoan.html">
+                                            Bảng giá                                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="block-menu">
+                                <h3>Freelancer</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://freelancerviet.vn/dang-ky.html">
+                                            Đăng ký                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/cong-viec-freelance.html">
+                                            Tìm việc                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/mua-credit.html">
+                                            Bảng giá                                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="block-menu">
+                                <h3>Trợ giúp</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://freelancerviet.vn/tro-giup.html">
+                                            Trợ giúp                                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row row-copyright">
-
+    </div>
+    <div class="copyright">
+        <div class="container">
+            Copyright © 2018 freelancerViet Co., Ltd. All Rights Reserved.
+            <div class="links">
+                <a href="https://freelancerviet.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
+                <span class="">|</span>
+                <a href="https://freelancerviet.vn/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+            </div>
         </div>
     </div>
 </footer>
@@ -283,6 +1108,13 @@
     <!-- jQuery-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- jQuery - END -->
+
+    <!-- jQuery-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery - END -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap-select.min.js"></script>
 
     <!-- Main Script -->
     <script src="js/scripts-bundled.js"></script>

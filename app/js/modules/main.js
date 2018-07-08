@@ -15,6 +15,10 @@ export default class MainScript {
       keyboard: true,
       pause: 'hover',
     });
+
+    $('.selectpicker').selectpicker({
+      size: 4,
+    });
   }
 
   /* =========== METHODS ========== */

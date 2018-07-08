@@ -10,84 +10,126 @@
     <link rel="stylesheet" href="css/vendors/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/styles.css" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/vendors/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Main stylesheet Reference -->
 
 </head>
 <body>
 
 <!-- NAVIGATION -->
-<header>
-    <nav class="navbar navbar-expand-lg">
+<header id="header" class="fixed-top transparent">
+    <!-- Container -->
     <div class="container">
-        <!-- LOGO -->
-        <a class="navbar-brand" href="#">
-            Logo
-        </a><!-- LOGO -->
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-header navbar-mainmenu navbar-expand-lg">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img class="navbar-brand-white" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo.png" alt="freelancerViet">
+                <img class="navbar-brand-normal" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo-2.png" alt="freelancerViet">
+            </a>
+            <!-- Logo -->
 
-        <!-- COLLAPSE NAVBAR -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-            </ul>
+            <!-- Menu icon -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu icon -->
 
-            <ul class="navbar-nav ">
-                <li class="multi-childs hide-mobile">
-                    <a href="https://freelancerviet.vn/dang-ky.html"><span>Đăng ký</span></a>
-                    <span>|</span>
-                    <a href="https://freelancerviet.vn/dang-nhap.html"><span>Đăng nhập</span></a>
-                </li>					                        <li class="dropdown dropdown-right language dropdown-hover hide-mobile">
-                <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">
-                    <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt="">
-                </a>
-                <ul class="dropdown-menu " role="menu" style="width: 200px; display: none;">
-                    <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/vi.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span></a></li>
-                    <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/en.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span></a></li>
-                </ul>					    </li>
-            </ul>
-        </div><!-- COLLAPSE NAVBAR -->
+            <!-- Collapse Menu -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Main Menu -->
+                <ul class="navbar-nav mr-auto pl-lg-5">
+
+                    <!-- Mobile Login Menu -->
+                    <li class="multi-childs show-mobile">
+                        <a href="https://freelancerviet.vn/dang-ky.html"><span>Đăng ký</span></a>
+                        <span>|</span>
+                        <a href="https://freelancerviet.vn/dang-nhap.html"><span>Đăng nhập</span></a>
+                    </li>
+                    <!-- Mobile Login Menu -->
+
+                    <!-- Main Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="">ĐĂNG VIỆC</span>
+                        </a>
+                    </li><!-- Nav item -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="">TÌM FREELANCER</span>
+                        </a>
+                    </li><!-- Nav Item -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="">TÌM VIỆC LÀM THÊM</span>
+                        </a>
+                    </li><!-- Nav Item -->
+
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">
+                            <span class="">DỊCH VỤ TRỌN GÓI</span>
+                        </a>
+                    </li><!-- Nav Item -->
+                    <!-- Main Menu -->
+
+                    <!-- Menu Login -->
+                    <li class="multi-childs show-mobile nav-item language-mobile">
+                        <a class="nav-link active" href="#">
+                            <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span>
+                        </a>
+                        <span>|</span>
+                        <a class="nav-link " href="#">
+                            <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span>
+                        </a>
+                    </li><!-- Menu Login -->
+                </ul>
+
+                <ul class="navbar-nav ">
+                    <li class="multi-childs hide-mobile">
+                        <a href="https://freelancerviet.vn/dang-ky.html"><span>Đăng ký</span></a>
+                        <span>|</span>
+                        <a href="https://freelancerviet.vn/dang-nhap.html"><span>Đăng nhập</span></a>
+                    </li>					                        <li class="dropdown dropdown-right language dropdown-hover hide-mobile">
+                    <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">
+                        <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu " role="menu" style="width: 200px;">
+                        <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/vi.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span></a></li>
+                        <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/en.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span></a></li>
+                    </ul>					    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
-</nav>
+    <!-- Container -->
 </header>
 <!-- NAVIGATION -->
 
 
 <!-- BANNER -->
 <section class="banner">
-    <!-- Container -->
-    <div class="container">
-        <!-- Banner Main Content -->
         <div class = "banner-main-content">
-            <!-- Heading -->
-            <h1>
-                Giải quyết tức thì mọi nhu cầu công việc bởi các freelancer chuyên nghiệp
-            </h1>
-            <h3>Bất kỳ việc gì – Bất kể nơi đâu</h3>
-            <!-- Heading -->
-
-            <!-- New Job Form -->
-            <div class="new-job-form">
-                <form class="form-inline">
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="inputPassword2" class="sr-only">Password</label>
-                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            <div class="caption">
+                <div class="container">
+                    <div class="caption-inside">
+                        <h2>Giải quyết tức thì mọi nhu cầu công việc
+                            bởi các freelancer chuyên nghiệp</h2>
+                        <p class="txt-medium">Bất kỳ việc gì – Bất kể nơi đâu</p>
+                        <div class="form-group">
+                            <select class="selectpicker" data-live-search="true">
+                                <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                            </select>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
-                </form>
-            </div><!-- New Job Form -->
-        </div><!-- Banner Main Content -->
-    </div><!-- Container -->
+                </div>
+            </div>
 </section>
 <!-- BANNER -->
 
@@ -1068,8 +1110,11 @@
     <!-- jQuery - END -->
 
     <!-- jQuery-->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <!-- jQuery - END -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap-select.min.js"></script>
 
     <!-- Main Script -->
     <script src="js/scripts-bundled.js"></script>

@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .mag-bot-0{
     margin-bottom: 0 !important;
 }
@@ -26,4 +30,17 @@
 
 .ml-auto{
     margin-left: auto;
+}
+
+.mr-auto{
+    margin-right: auto;
+}
+
+
+.show-mobile {
+    display: none !important;
+
+    @media (max-width: 991px) {
+        display: block !important;
+    }
 }

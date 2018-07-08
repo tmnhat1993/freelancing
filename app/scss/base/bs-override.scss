@@ -18,3 +18,31 @@
     display:block;
   }
 }
+
+.btn-primary {
+  border-color: #2e8ae1;
+  background-color: #2e8ae1;
+
+  &:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+}
+
+.text-primary {
+  color: #2e8ae1 !important;
+}
+
+.social-icon {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}

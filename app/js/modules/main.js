@@ -19,6 +19,11 @@ export default class MainScript {
     $('.selectpicker').selectpicker({
       width: 'fit',
     });
+
+    $('#phone_country_code').selectpicker({
+      width: 'fit',
+      liveSearch: 'true',
+    });
   }
 
   /* =========== METHODS ========== */

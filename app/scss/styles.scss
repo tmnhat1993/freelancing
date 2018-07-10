@@ -18,14 +18,18 @@
 @import "layouts/section";
 @import "layouts/cards";
 @import "layouts/footer";
+@import "layouts/sidebar";
 
 // Components
 @import "components/nav";
 @import "components/forms";
+@import "components/card";
+@import "components/misc";
 
 // Pages
 @import "pages/index";
 @import "pages/register";
+@import "pages/job-list";
 
 
 

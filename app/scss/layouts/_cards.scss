@@ -54,6 +54,13 @@
   border-radius: 50%;
   display: inline-block;
   overflow: hidden;
+}
+
+.avatar{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
 
   &.avatar-122{
     width: 122px;
@@ -63,5 +70,10 @@
   &.avatar-165{
     width: 165px;
     height: 165px;
+  }
+
+  &.avatar-32 {
+    width: 32px;
+    height: 32px;
   }
 }

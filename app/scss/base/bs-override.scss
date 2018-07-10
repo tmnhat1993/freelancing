@@ -13,6 +13,10 @@
   }
 }
 
+*{
+  outline: none !important;
+}
+
 .dropdown-menu{
   &[aria-expanded="true"]{
     display:block;
@@ -45,4 +49,8 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+
+.text-warning {
+  color: #e67e22 !important;
 }

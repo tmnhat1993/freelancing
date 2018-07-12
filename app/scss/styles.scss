@@ -1,3 +1,6 @@
+// Core Basic
+@import "layouts/main";
+
 // Variables + Mixins + Functions
 @import "helpers/variables";
 
@@ -7,7 +10,26 @@
 
 // Base
 @import "base/typography";
+@import "base/bs-override";
 
+// Layout
+@import "layouts/header";
+@import "layouts/banner";
+@import "layouts/section";
+@import "layouts/cards";
+@import "layouts/footer";
+@import "layouts/sidebar";
+
+// Components
+@import "components/nav";
+@import "components/forms";
+@import "components/card";
+@import "components/misc";
+
+// Pages
+@import "pages/index";
+@import "pages/register";
+@import "pages/job-list";
 
 
 

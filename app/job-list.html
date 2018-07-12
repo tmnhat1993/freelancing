@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Freelancing</title>
+
+    <!-- Bootstrap Stylesheet Reference -->
+    <link rel="stylesheet" href="css/vendors/jquery-ui.css">
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/vendors/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Main stylesheet Reference -->
+
+</head>
+<body class="pt-8">
+
+<!-- NAVIGATION -->
+<header id="header" class="fixed-top transparent over">
+    <!-- Container -->
+    <div class="container">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-header navbar-mainmenu navbar-expand-lg">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img class="navbar-brand-white" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo.png" alt="freelancerViet">
+                <img class="navbar-brand-normal" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo-2.png" alt="freelancerViet">
+            </a>
+            <!-- Logo -->
+
+            <!-- Menu icon -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu icon -->
+
+            <!-- Collapse Menu -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Main Menu -->
+                <ul class="navbar-nav mr-auto pl-lg-5">
+
+                    <!-- Mobile Login Menu -->
+                    <li class="multi-childs show-mobile">
+                        <a href="https://freelancerviet.vn/dang-ky.html"><span>Đăng ký</span></a>
+                        <span>|</span>
+                        <a href="https://freelancerviet.vn/dang-nhap.html"><span>Đăng nhập</span></a>
+                    </li>
+                    <!-- Mobile Login Menu -->
+
+                    <!-- Main Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="">ĐĂNG VIỆC</span>
+                        </a>
+                    </li><!-- Nav item -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="">TÌM FREELANCER</span>
+                        </a>
+                    </li><!-- Nav Item -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="">TÌM VIỆC LÀM THÊM</span>
+                        </a>
+                    </li><!-- Nav Item -->
+
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">
+                            <span class="">DỊCH VỤ TRỌN GÓI</span>
+                        </a>
+                    </li><!-- Nav Item -->
+                    <!-- Main Menu -->
+
+                    <!-- Menu Login -->
+                    <li class="multi-childs show-mobile nav-item language-mobile">
+                        <a class="nav-link active" href="#">
+                            <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span>
+                        </a>
+                        <span>|</span>
+                        <a class="nav-link " href="#">
+                            <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span>
+                        </a>
+                    </li><!-- Menu Login -->
+                </ul>
+
+                <ul class="navbar-nav ">
+                    <li class="multi-childs hide-mobile">
+                        <a href="https://freelancerviet.vn/dang-ky.html"><span>Đăng ký</span></a>
+                        <span>|</span>
+                        <a href="https://freelancerviet.vn/dang-nhap.html"><span>Đăng nhập</span></a>
+                    </li>					                        <li class="dropdown dropdown-right language dropdown-hover hide-mobile">
+                    <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">
+                        <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu " role="menu" style="width: 200px;">
+                        <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/vi.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span></a></li>
+                        <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/en.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span></a></li>
+                    </ul>					    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Container -->
+</header>
+<!-- NAVIGATION -->
+
+<!-- Main Content -->
+<!-- Heading Section -->
+<section class="section-main section-top-banner"
+         style="background-image: url(&quot;https://fvstaticws.freelancerviet.vn/fv3templates/default/images/banner/top-banner.png&quot;);"
+         id = "job-list-banner">
+    <div class="container">
+        <h1 class="page-title">Danh sách công việc</h1>
+        <p class="caption">Tips: Hãy báo giá chính xác theo số lượng, thời gian để được chọn nhanh chóng</p>
+    </div>
+</section>
+<!-- Heading Section -->
+
+<!-- Sub Heading Section -->
+<section class="section-main section-tab-menu">
+    <div class="container">
+        <ul class="single-tab list-unstyled">
+            <li class="active">
+                <a href="#">VIỆC FREELANCE</a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- Sub Heading Section -->
+
+<section class="section-main section-job-list bg-gray">
+    <!-- Job List -->
+    <div class="container" id="job-list">
+        <!-- Row -->
+        <div class="row">
+            <!-- Job Filter Column -->
+            <div class="col-lg-3 col-md-4 col-job-filter">
+                <!-- Sidebar -->
+                <div class="sidebar">
+
+                    <!-- Box -->
+                    <div class="box">
+                        <!-- Heading -->
+                        <h3 class="heading">Chọn lĩnh vực công việc</h3>
+
+                        <!-- Main Sidebar Content -->
+                        <div class="content">
+
+                            <div class="card-filter" id="jobs-filter" role="tablist" aria-multiselectable="true">
+
+                                <!-- Card Item -->
+                                <div class="card card-default">
+
+                                    <!-- Card Header -->
+                                    <div class="card-header" role="tab" id="heading-657">
+                                        <h4 class="card-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#jobs-filter" href="#collapse-657" aria-expanded="false" aria-controls="collapse-657" class="collapsed">Lập trình</a>
+                                        </h4>
+                                    </div><!-- Card Header -->
+
+                                    <!-- Collapse Content -->
+                                    <div id="collapse-657" class="collapse" role="tabpanel" aria-labelledby="heading-657">
+
+                                        <!-- Collapse Content Body -->
+                                        <div class="card-body">
+                                            <!-- Check Box Filter -->
+                                            <div class="list-checkbox-filter">
+                                                <div class="custom-scroll-content custom-scroll">
+                                                    <div tabindex="0">
+                                                        <div id="mCSB_1_container">
+                                                            <div class="filter-item"><span class="checkbox-style">
+                                                        <input type="checkbox" id="category_filter_658" name="category_filter" value="658">
+                                <label for="category_filter_658">Lập trình web</label>
+                            </span>
+                                                            </div>
+                                                            <div class="filter-item">
+                                                            <span class="checkbox-style">
+                                                                <input type="checkbox" id="category_filter_671" name="category_filter" value="671" class="category-filter-671 category-filter-item">
+                                                                <label for="category_filter_671">Lập trình PhoneGap</label>
+                                                            </span>
+                                                            </div>
+                                                            <div class="filter-item">
+                                    <span class="checkbox-style">
+                                        <input type="checkbox" id="category_filter_822" name="category_filter" value="822" class="category-filter-822 category-filter-item">
+                                        <label for="category_filter_822">Dịch vụ khác</label>
+                                    </span>
+                                                            </div>
+                                                            <div class="filter-item">
+                                                            <span class="checkbox-style">
+                                                        <input type="checkbox" id="category_filter_839" name="category_filter" value="839" class="category-filter-839 category-filter-item">
+                                                                <label for="category_filter_839">Lập trình Prestashop</label>
+                                                            </span>
+                                                            </div>
+                                                            <div class="filter-item">
+                                                        <span class="checkbox-style">
+                                                            <input type="checkbox" id="category_filter_842" name="category_filter" value="842" class="category-filter-842 category-filter-item">
+                                                            <label for="category_filter_842">Smart contract</label>
+                                                        </span>
+                                                            </div>
+                                                            <div class="filter-item">
+                                                        <span class="checkbox-style">
+                                                        <input type="checkbox" id="category_filter_843" name="category_filter" value="843" class="category-filter-843 category-filter-item">
+                                                        <label for="category_filter_843">React Native</label>
+                                                    </span>
+                                                            </div>
+                                                            <div class="filter-item"><span class="checkbox-style">
+                                                            <input type="checkbox" id="category_filter_821" name="category_filter" value="821" class="category-filter-821 category-filter-item">
+                                                            <label for="category_filter_821">DJ</label>
+                                                        </span>
+                                                            </div>
+                                                            <div class="filter-item">
+                                                            <span class="checkbox-style">
+                                                                <input type="checkbox" id="category_filter_837" name="category_filter" value="837" class="category-filter-837 category-filter-item">
+                                                                <label for="category_filter_837">Dịch vụ khác</label>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- Card Item -->
+
+                                <!-- Card Item -->
+                                <div class="card card-default">
+
+                                    <!-- Card Header -->
+                                    <div class="card-header" role="tab" id="heading-658">
+                                        <h4 class="card-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#jobs-filter" href="#collapse-658" aria-expanded="false" aria-controls="collapse-658" class="collapsed">Lập trình</a>
+                                        </h4>
+                                    </div><!-- Card Header -->
+
+                                    <!-- Collapse Content -->
+                                    <div id="collapse-658" class="collapse" role="tabpanel" aria-labelledby="heading-658">
+
+                                        <!-- Collapse Content Body -->
+                                        <div class="card-body">
+                                            <!-- Check Box Filter -->
+                                            <div class="list-checkbox-filter">
+                                                <div class="custom-scroll-content custom-scroll">
+                                                    <div tabindex="0">
+                                                        <div>
+                                                            <div class="filter-item"><span class="checkbox-style">
+                                                        <input type="checkbox" id="category_filter_658" name="category_filter" value="658">
+                                <label for="category_filter_658">Lập trình web</label>
+                            </span>
+                                                            </div>
+                                                            <div class="filter-item">
+                                                            <span class="checkbox-style">
+                                                                <input type="checkbox" id="category_filter_671" name="category_filter" value="671" class="category-filter-671 category-filter-item">
+                                                                <label for="category_filter_671">Lập trình PhoneGap</label>
+                                                            </span>
+                                                            </div>
+                                                            <div class="filter-item">
+                                    <span class="checkbox-style">
+                                        <input type="checkbox" id="category_filter_822" name="category_filter" value="822" class="category-filter-822 category-filter-item">
+                                        <label for="category_filter_822">Dịch vụ khác</label>
+                                    </span>
+                                                            </div>
+                                                            <div class="filter-item">
+                                                            <span class="checkbox-style">
+                                                        <input type="checkbox" id="category_filter_839" name="category_filter" value="839" class="category-filter-839 category-filter-item">
+                                                                <label for="category_filter_839">Lập trình Prestashop</label>
+                                                            </span>
+                                                            </div>
+                                                            <div class="filter-item">
+                                                        <span class="checkbox-style">
+                                                            <input type="checkbox" id="category_filter_842" name="category_filter" value="842" class="category-filter-842 category-filter-item">
+                                                            <label for="category_filter_842">Smart contract</label>
+                                                        </span>
+                                                            </div>
+                                                            <div class="filter-item">
+                                                        <span class="checkbox-style">
+                                                        <input type="checkbox" id="category_filter_843" name="category_filter" value="843" class="category-filter-843 category-filter-item">
+                                                        <label for="category_filter_843">React Native</label>
+                                                    </span>
+                                                            </div>
+                                                            <div class="filter-item"><span class="checkbox-style">
+                                                            <input type="checkbox" id="category_filter_821" name="category_filter" value="821" class="category-filter-821 category-filter-item">
+                                                            <label for="category_filter_821">DJ</label>
+                                                        </span>
+                                                            </div>
+                                                            <div class="filter-item">
+                                                            <span class="checkbox-style">
+                                                                <input type="checkbox" id="category_filter_837" name="category_filter" value="837" class="category-filter-837 category-filter-item">
+                                                                <label for="category_filter_837">Dịch vụ khác</label>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Item -->
+
+                            </div>
+                        </div>
+                        <!-- Main Sidebar Content -->
+                    </div>
+                    <!-- Box -->
+
+                </div>
+                <!-- Sidebar -->
+
+
+                <!-- Ads Box -->
+                <div class="box box-ads">
+                    <a href="#" target="_blank">
+                        <img src="https://fvstaticws.freelancerviet.vn/fv3images/images/banner/banner-web-dichvutrongoi-270-3_27K8j5950D.png" alt="Dịch vụ trọn gói">
+                    </a>
+                </div>
+                <!-- Ads Box -->
+
+                <div class="box box-ads">
+                    <a href="#" target="_blank">
+                        <img src="https://fvstaticws.freelancerviet.vn/fv3images/images/banner/uu-dai-doi-tac-270_uS9JRVzKTr.png"
+                             alt="Đối tác">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+                <div class="form-job-filter">
+                    <div class="form">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <div class="input-group input-search">
+                                        <input type="text" class="form-control filter-keyword" value="" placeholder="Nhập từ khoá cần tìm">
+                                        <span class="input-group-append">
+                                            <button class="btn btn-default input-group-btn" type="button">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-lg
+                                    text-uppercase btn-block btn-search-submit">Tìm kiếm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media-list-wrap">
+                    <ul class="media-list">
+                        <!-- Job item -->
+                        <li class="media">
+                            <!-- Job Item Body -->
+                            <div class="media-body">
+                                <!-- Title -->
+                                <h4 class="media-heading item-title">
+                                    <a href="https://freelancerviet.vn/viec-freelance/37618-1531033201-stylist-phu-trach-ve-mang-hinh-anh-clip-cua-nganh-hang-thoi-trang.html">
+                                        Stylist, phụ trách về mảng hình ảnh, clip của ngành hàng thời trang
+                                    </a>
+                                </h4>
+                                <!-- Title -->
+
+
+                                <ul class="media-stats list-unstyled horizontal item-stats">
+                                    <li>
+                                        <i class="fa fa-list-alt" aria-hidden="true"></i>Thực hiện toàn bộ video clip
+                                    </li>
+                                    <li>
+                                        <i class="ion-ios-location-outline"></i> Hà Nội, VN
+                                    </li>
+                                    <li>
+                                <span class="status status-success">
+                                    Đang nhận báo giá
+                                </span>
+                                    </li>
+                                </ul>
+                                <div class="media-text">
+                                    Thời lượng clip Nhỏ hơn 1 phút  Kịch bản của clip Chưa có, cần làm...
+                                    <a href="https://freelancerviet.vn/viec-freelance/37618-1531033201-stylist-phu-trach-ve-mang-hinh-anh-clip-cua-nganh-hang-thoi-trang.html" class="text-warning">
+                                        Xem thêm
+                                    </a>
+                                </div>
+                                <div class="media-author">
+                                    <div class="media">
+                                        <div class="media-left ">
+                                            <a href="https://freelancerviet.vn/viec-freelance/37618-1531033201-stylist-phu-trach-ve-mang-hinh-anh-clip-cua-nganh-hang-thoi-trang.html">
+                                                <img class="media-object avatar avatar-32" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/default-avatar.png" alt="Nguyễn Thị Thanh Huyền">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Nguyễn Thị Thanh Huyền</h4>
+                                            <p>Hà Nội, VN | Đã đăng 1 việc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Job Item Body -->
+
+                            <!-- Pricing Detail -->
+                            <div class="media-right">
+
+                                <!-- Detail List Element -->
+                                <ul class="media-stats list-unstyled">
+                                    <li class="highlight">₫4,000,000 - ₫6,000,000</li>
+                                    <li>Hạn nộp: 11/07/2018</li>
+                                    <li>Số lượng báo giá: 0/10</li>
+                                </ul>
+                                <!-- Detail List Element -->
+
+                                <!-- Call to Action -->
+                                <div class="btn-quote-wrap">
+                                    <a href="https://freelancerviet.vn/viec-freelance/37618-1531033201-stylist-phu-trach-ve-mang-hinh-anh-clip-cua-nganh-hang-thoi-trang.html" class="btn btn-primary btn-quote">
+                                        BÁO GIÁ NGAY
+                                    </a>
+                                </div>
+                                <!-- Call to Action -->
+
+                            </div>
+                            <!-- Pricing Detail -->
+                        </li>
+                        <!-- Job item -->
+
+                        <!-- Job item -->
+                        <li class="media">
+                            <div class="media-body">
+                                <h4 class="media-heading item-title">
+                                    <a href="https://freelancerviet.vn/viec-freelance/37616-1531009165-lap-trinh-web-ecommerce.html">Lập trình web ecommerce</a></h4><ul class="media-stats list-unstyled horizontal item-stats">
+                                <li>
+                                    <i class="fa fa-list-alt" aria-hidden="true"></i>Lập trình web
+                                </li>
+                                <li>
+                                    <i class="ion-ios-location-outline"></i>
+                                    Hồ Chí Minh, VN
+                                </li>
+                                <li>
+                                    <span class="status status-success">Đang nhận báo giá</span>
+                                </li>
+                            </ul>
+                                <div class="media-text">
+                                    Loại website cần làm: Bán hàng  Lĩnh vực hoạt động: Bán buôn ...
+                                    <a href="https://freelancerviet.vn/viec-freelance/37616-1531009165-lap-trinh-web-ecommerce.html" class="text-warning">
+                                        Xem thêm
+                                    </a>
+                                </div>
+                                <div class="media-author">
+                                    <div class="media">
+                                        <div class="media-left ">
+                                            <a href="https://freelancerviet.vn/viec-freelance/37616-1531009165-lap-trinh-web-ecommerce.html">
+                                                <img class="media-object avatar avatar-32" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/default-avatar.png" alt="Nguyễn  Đức Tâm">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Nguyễn  Đức Tâm</h4>
+                                            <p>Hồ Chí Minh, VN | Đã đăng 1 việc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-right">
+                                <ul class="media-stats list-unstyled">
+                                    <li class="highlight">₫4,000,000 - ₫6,000,000</li>
+                                    <li>Hạn nộp: 06/08/2018</li>
+                                    <li>Số lượng báo giá: 0/10</li>
+                                </ul>
+                                <div class="btn-quote-wrap">
+                                    <a href="https://freelancerviet.vn/viec-freelance/37616-1531009165-lap-trinh-web-ecommerce.html" class="btn btn-primary btn-quote">
+                                        BÁO GIÁ NGAY
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Job item -->
+
+                        <!-- Job item -->
+                        <li class="media">
+                            <div class="media-body">
+                                <h4 class="media-heading item-title">
+                                    <a href="https://freelancerviet.vn/viec-freelance/37615-1531009067-quan-ly-fanpage-gioi-thieu-san-pham-va-van-hoa-tieu-dung-san-pham.html">
+                                        Quản lý fanpage giới thiệu sản phẩm và văn hoá tiêu dùng sản phẩm
+                                    </a>
+                                </h4>
+                                <ul class="media-stats list-unstyled horizontal item-stats">
+                                    <li>
+                                        <i class="fa fa-list-alt" aria-hidden="true"></i>Quản lý fanpage
+                                    </li>
+                                    <li>
+                                        <i class="ion-ios-location-outline"></i> Toàn Quốc, VN
+                                    </li>
+                                    <li>
+                                        <span class="status status-success">Đang nhận báo giá</span>
+                                    </li>
+                                </ul>
+                                <div class="media-text">
+                                    Mục tiêu Tăng độ nhận biết về thương hiệu, Tăng doanh thu  Fanpage Dầu ô liu thượng...
+                                    <a href="https://freelancerviet.vn/viec-freelance/37615-1531009067-quan-ly-fanpage-gioi-thieu-san-pham-va-van-hoa-tieu-dung-san-pham.html" class="text-warning">
+                                        Xem thêm
+                                    </a>
+                                </div>
+                                <div class="media-author">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="https://freelancerviet.vn/viec-freelance/37615-1531009067-quan-ly-fanpage-gioi-thieu-san-pham-va-van-hoa-tieu-dung-san-pham.html">
+                                                <img class="media-object avatar avatar-32" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/default-avatar.png" alt="Pham Nguyet">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Pham Nguyet</h4>
+                                            <p>Toàn Quốc, VN | Đã đăng 1 việc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-right">
+                                <ul class="media-stats list-unstyled">
+                                    <li class="highlight">₫2,000,000 - ₫4,000,000</li>
+                                    <li>Hạn nộp: 10/07/2018</li>
+                                    <li>Số lượng báo giá: 2/10</li>
+                                </ul>
+                                <div class="btn-quote-wrap">
+                                    <a href="https://freelancerviet.vn/viec-freelance/37615-1531009067-quan-ly-fanpage-gioi-thieu-san-pham-va-van-hoa-tieu-dung-san-pham.html" class="btn btn-primary btn-quote">BÁO GIÁ NGAY</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Job item -->
+                    </ul>
+
+                    <!-- Pagination -->
+                    <div class="pagination-wrap">
+                        <nav aria-label="Page navigation" class="float-md-right">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#">
+                                        <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#">
+                                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item active">
+                                    <a class="page-link undefined" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">4</a></li><li class="page-item">
+                                <a class="page-link" href="#">5</a>
+                            </li>
+                                <li class="page-item"><a class="page-link" href="#">
+                                    <i class="fa fa-angle-right" aria-hidden="true">
+
+                                    </i>
+                                </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Main Content -->
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="about-footer">
+                        <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo-2.png" alt="">
+                        <div class="socials">
+                            <a target="_blank" href="https://www.facebook.com/FreelancerViet">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a target="_blank" href="https://plus.google.com/u/5/+freelancervietvncongdong">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a>
+                            <a target="_blank" href="https://twitter.com/freelancerViet">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/bct.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="block-menu">
+                                <h3>Công ty</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://freelancerviet.vn/gioi-thieu.html">
+                                            Về chúng tôi                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/press.html">
+                                            Vinh danh trên báo chí                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/danh-sach-doi-tac.html">
+                                            Đối tác                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/blog-ky-nang.html">
+                                            Tin tức cộng đồng                                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="block-menu">
+                                <h3>Khách hàng</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://freelancerviet.vn/dang-viec.html">
+                                            Đăng việc                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/ho-so-freelancer.html">
+                                            Tìm freelancer                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/danh-sach-goi-cong-viec.html">
+                                            Dịch vụ trọn gói                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/nang-cap-tai-khoan.html">
+                                            Bảng giá                                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="block-menu">
+                                <h3>Freelancer</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://freelancerviet.vn/dang-ky.html">
+                                            Đăng ký                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/cong-viec-freelance.html">
+                                            Tìm việc                                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://freelancerviet.vn/mua-credit.html">
+                                            Bảng giá                                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="block-menu">
+                                <h3>Trợ giúp</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://freelancerviet.vn/tro-giup.html">
+                                            Trợ giúp                                                </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            Copyright © 2018 freelancerViet Co., Ltd. All Rights Reserved.
+            <div class="links">
+                <a href="https://freelancerviet.vn/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
+                <span class="">|</span>
+                <a href="https://freelancerviet.vn/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER -->
+
+<!-- Scripts Refference -->
+<!-- jQuery-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- jQuery - END -->
+
+<!-- jQuery-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- jQuery - END -->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap-select.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/scripts-bundled.js"></script>
+<!-- Main Script - END -->
+<!-- Scripts Reference - END -->
+
+</body>
+</html>

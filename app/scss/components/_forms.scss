@@ -1,0 +1,131 @@
+.radio-style [type="radio"]:not(:checked)+label, .radio-style [type="radio"]:checked+label {
+  position: relative;
+  padding-left: 30px;
+  padding-top: 0;
+  cursor: pointer;
+  margin: 0;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.radio-style [type="radio"]:not(:checked)+label:before, .radio-style [type="radio"]:checked+label:before {
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  font-family: 'fontawesome';
+  font-size: 20px;
+  line-height: 20px;
+  content: "\f10c";
+}
+
+.radio-style [type="radio"]:checked+label:before {
+  content: "\f05d";
+  color: #2e8ae1;
+}
+
+.radio-style [type="radio"]:not(:checked), .radio-style [type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+.form .form-control.checkbox-style, .form .form-control.radio-style {
+  padding: 0;
+  border-color: transparent;
+  height: auto;
+  background-color: transparent;
+}
+
+.radio-style{
+  border:none;
+}
+
+form {
+  label {
+    color: #4e4d4d;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+}
+
+.checkbox-style [type="checkbox"]:not(:checked)+label,
+.checkbox-style [type="checkbox"]:checked+label {
+  position: relative;
+  padding-left: 34px;
+  padding-top: 0;
+  cursor: pointer;
+  margin: 0;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.checkbox-style [type="checkbox"]:not(:checked)+label:not(.btn):before,
+.checkbox-style [type="checkbox"]:checked+label:not(.btn):before {
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  font-family: 'Ionicons';
+  font-size: 20px;
+  line-height: 20px;
+  content: "\f372";
+}
+
+.checkbox-style [type="checkbox"]:not(:checked), .checkbox-style [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.checkbox-style [type="checkbox"]:not(:checked)+label:not(.btn):before,
+.checkbox-style [type="checkbox"]:checked+label:not(.btn):before {
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  font-family: 'fontawesome';
+  font-size: 20px;
+  line-height: 20px;
+  content: "\f096";
+}
+
+
+.checkbox-style [type="checkbox"]:checked+label:not(.btn):before {
+  content: "\f14a";
+  color: #2e8ae1;
+}
+
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-job-filter .form-control {
+  height: 48px !important;
+  font-size: 16px;
+}
+
+.input-group>.custom-file,
+.input-group>.custom-select,
+.input-group>.form-control {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+
+.input-search .input-group-btn.btn {
+  border-color: #d0d7d9;
+  height: 48px;
+  text-align: center;
+  border-left-color: transparent;
+  background-color: #fff;
+}
+
+.form-job-filter .btn {
+  height: 48px;
+}

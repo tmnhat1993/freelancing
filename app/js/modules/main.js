@@ -10,7 +10,20 @@ export default class MainScript {
 
   /* ============ EVENTS ===========*/
   bindEvent(){
+    $('.carousel').carousel({
+      interval: 3000,
+      keyboard: true,
+      pause: 'hover',
+    });
 
+    $('.selectpicker').selectpicker({
+      width: 'fit',
+    });
+
+    $('#phone_country_code').selectpicker({
+      width: 'fit',
+      liveSearch: 'true',
+    });
   }
 
   /* =========== METHODS ========== */

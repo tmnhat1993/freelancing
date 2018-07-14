@@ -120,7 +120,20 @@ function () {
 
   _createClass(MainScript, [{
     key: "bindEvent",
-    value: function bindEvent() {}
+    value: function bindEvent() {
+      $('.carousel').carousel({
+        interval: 3000,
+        keyboard: true,
+        pause: 'hover'
+      });
+      $('.selectpicker').selectpicker({
+        width: 'fit'
+      });
+      $('#phone_country_code').selectpicker({
+        width: 'fit',
+        liveSearch: 'true'
+      });
+    }
     /* =========== METHODS ========== */
 
   }]);

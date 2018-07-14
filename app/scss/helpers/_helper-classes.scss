@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .mag-bot-0{
     margin-bottom: 0 !important;
 }
@@ -14,4 +18,36 @@
 }
 .strikethrough{
     text-decoration: line-through;
+}
+
+.mb-40 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-50 {
+    margin-bottom: 3rem !important;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.mr-auto{
+    margin-right: auto;
+}
+
+.pt-8{
+    padding-top: 80px;
+}
+
+.w-100{
+    width: 100px;
+}
+
+.show-mobile {
+    display: none !important;
+
+    @media (max-width: 991px) {
+        display: block !important;
+    }
 }

@@ -24,73 +24,51 @@
 <body class="pt-8">
 
 <!-- NAVIGATION -->
-<header id="header" class="fixed-top transparent over">
-    <!-- Container -->
+<header id="header" class="fixed-top">
     <div class="container">
-        <!-- Nav Bar -->
         <nav class="navbar navbar-header navbar-mainmenu navbar-expand-lg">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://freelancerviet.vn/trang-chu.html">
                 <img class="navbar-brand-white" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo.png" alt="freelancerViet">
                 <img class="navbar-brand-normal" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo-2.png" alt="freelancerViet">
             </a>
-            <!-- Logo -->
-
-            <!-- Menu icon -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Menu icon -->
-
-            <!-- Collapse Menu -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <!-- Main Menu -->
+            <div class="navbar-collapse collapse" id="navbarCollapse" style="">
                 <ul class="navbar-nav mr-auto pl-lg-5">
-
-                    <!-- Mobile Login Menu -->
                     <li class="multi-childs show-mobile">
                         <a href="https://freelancerviet.vn/dang-ky.html"><span>Đăng ký</span></a>
                         <span>|</span>
                         <a href="https://freelancerviet.vn/dang-nhap.html"><span>Đăng nhập</span></a>
-                    </li>
-                    <!-- Mobile Login Menu -->
-
-                    <!-- Main Menu -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="">ĐĂNG VIỆC</span>
-                        </a>
-                    </li><!-- Nav item -->
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
+                    </li>					<li class="nav-item  ">
+                    <a class="nav-link" href="https://freelancerviet.vn/dang-viec.html">
+                        <span class="">ĐĂNG VIỆC</span>
+                    </a>
+                </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="https://freelancerviet.vn/ho-so-freelancer.html">
                             <span class="">TÌM FREELANCER</span>
                         </a>
-                    </li><!-- Nav Item -->
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="https://freelancerviet.vn/cong-viec-freelance.html">
                             <span class="">TÌM VIỆC LÀM THÊM</span>
                         </a>
-                    </li><!-- Nav Item -->
-
+                    </li>
                     <li class="nav-item  ">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="https://freelancerviet.vn/danh-sach-goi-cong-viec.html">
                             <span class="">DỊCH VỤ TRỌN GÓI</span>
                         </a>
-                    </li><!-- Nav Item -->
-                    <!-- Main Menu -->
-
-                    <!-- Menu Login -->
+                    </li>
                     <li class="multi-childs show-mobile nav-item language-mobile">
-                        <a class="nav-link active" href="#">
+                        <a class="nav-link active" href="https://freelancerviet.vn/vi.html">
                             <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span>
                         </a>
                         <span>|</span>
-                        <a class="nav-link " href="#">
+                        <a class="nav-link " href="https://freelancerviet.vn/en.html">
                             <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span>
                         </a>
-                    </li><!-- Menu Login -->
+                    </li>
                 </ul>
 
                 <ul class="navbar-nav ">
@@ -102,7 +80,7 @@
                     <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">
                         <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt="">
                     </a>
-                    <ul class="dropdown-menu " role="menu" style="width: 200px;">
+                    <ul class="dropdown-menu " role="menu">
                         <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/vi.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span></a></li>
                         <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/en.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span></a></li>
                     </ul>					    </li>
@@ -110,7 +88,6 @@
             </div>
         </nav>
     </div>
-    <!-- Container -->
 </header>
 <!-- NAVIGATION -->
 
@@ -159,10 +136,11 @@
                                         <small class="form-control-required">*</small>
                                     </label>
 
+                                    <!-- Form Row -->
                                     <div class="form-row">
                                         <!-- Main Select Box -->
                                         <select name="category_id" id="category_id"
-                                                class="form-control required selectpicker selectpicker-basic"
+                                                class="form-control required selectpicker-basic"
                                                 data-api="https://freelancerviet.vn/job/job_categories/subcategory_options.html"
                                                 data-target="#subcategory_id" data-callback="updateDynamicContent('#subcategory_id')"
                                                 required="true" data-rule-required="true" data-theme="bootstrap4"
@@ -182,12 +160,14 @@
                                             <option value="715">Dịch thuật</option>
                                         </select>
                                         <!-- Main Select Box -->
-                                    </div>
+                                    </div><!-- Form Row -->
+
+                                    <!-- Form Row -->
                                     <div class="form-row">
                                         <!-- Sub Select Box -->
                                         <select name="subcategory_id"
                                                 id="subcategory_id"
-                                                class="form-control required selectpicker selectpicker-basic"
+                                                class="form-control required selectpicker-basic"
                                                 required="true"
                                                 data-rule-required="true"
                                                 data-theme="bootstrap4"
@@ -200,19 +180,38 @@
                                             <option value="" selected="selected">Chọn loại công việc</option>
                                         </select>
                                         <!-- Sub Select Box -->
-                                    </div>
+                                    </div><!-- Form Row -->
                                 </div>
-                            </div>
-                        </div>
+                                <!-- Drop down category -->
+
+                            </div><!-- Row -->
+                        </div><!-- Form Group -->
+
+
+                        <!-- Survey Dynamic -->
                         <div id="survey-dynamic">
+                            <!-- Form Group -->
                             <div class="form-group form-group-number">
+
+                                <!-- Row -->
                                 <div class="row">
+
+                                    <!-- Column Number Mark -->
                                     <div class="col-sm-auto">
                                         <span class="form-control-number">2</span>
                                     </div>
+                                    <!-- Column Number Mark -->
+
+                                    <!-- Main Content Column -->
                                     <div class="col-sm-10">
-                                        <label for="" class="form-control-label md">Tên công việc của bạn <small class="form-control-required">*</small></label>
-                                        <input type="text" name="answers[2][5][]" value="" id="answers25" class="form-control required" required="true" data-rule-required="true" placeholder="" aria-required="true">
+                                        <!-- Label -->
+                                        <label for="" class="form-control-label md">
+                                            Tên công việc của bạn <small class="form-control-required">*</small>
+                                        </label><!-- Label -->
+
+                                        <!-- Input -->
+                                        <input type="text"
+                                               value="" class="form-control required" aria-required="true">
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +242,7 @@
                                     </div>
                                     <div class="col-sm-10">
                                         <label for="" class="form-control-label md">Bạn cần khi nào <small class="form-control-required">*</small></label>
-                                        <select name="answers[1][2][]" id="answers12" class="form-control required selectpicker selectpicker-basic" required="true" data-rule-required="true" type="dropdown" data-minimum-results-for-search="-1" data-theme="bootstrap4" tabindex="-1" aria-hidden="true" aria-required="true">
+                                        <select name="answers[1][2][]" id="answers12" class="form-control required selectpicker-basic" required="true" data-rule-required="true" type="dropdown" data-minimum-results-for-search="-1" data-theme="bootstrap4" tabindex="-1" aria-hidden="true" aria-required="true">
                                             <option value="1">1 ngày</option>
                                             <option value="3">3 ngày</option>
                                             <option value="7">7 ngày</option>
@@ -266,7 +265,7 @@
                                                 <!-- Select Picker - Select Country -->
                                                 <select name="answers[1][3][country]"
                                                         id="country_id"
-                                                        class="form-control required selectpicker selectpicker-basic"
+                                                        class="form-control required selectpicker-basic"
                                                         data-rule-required="true">
                                                     <option value="">Chọn quốc gia</option>
                                                     <option value="253">South Sudan</option>
@@ -282,7 +281,7 @@
                                             <div class="col-lg-6 address-has-province">
                                                 <!-- Select Picker - Select Province -->
                                                 <select name="answers[1][3][province]"
-                                                        class="form-control required selectpicker selectpicker-basic">
+                                                        class="form-control required selectpicker-basic">
                                                     <option value="">Tỉnh/ thành phố</option>
                                                     <option value="22">Hồ Chí Minh</option>
                                                     <option value="33">Đà Nẵng</option>
@@ -320,7 +319,7 @@
                                             <div class="col-sm-auto">
                                                 <select name="answers[1][4][currency]"
                                                         id="answers14child"
-                                                        class="form-control select-currency selectpicker selectpicker-basic">
+                                                        class="form-control select-currency selectpicker-basic">
                                                     <option value="vnd" selected="selected">₫</option>
                                                 </select>
                                             </div>
@@ -331,7 +330,7 @@
                                             <div class="col-sm-8">
                                                 <select name="answers[1][4][price]"
                                                         id="answers14"
-                                                        class="form-control required selectpicker selectpicker-basic"
+                                                        class="form-control required selectpicker-basic"
                                                         required="true">
                                                     <option value="" selected="selected">Chọn mức ngân sách dự kiến</option>
                                                     <option value="1">₫100,000 - ₫500,000</option>
@@ -477,7 +476,7 @@
                         </span>
                         </div>
                         <div class="form-button">
-                            <button class="btn btn-lg btn-primary btn-pad-lg">ĐĂNG VIỆC</button>
+                            <button class="btn btn-lg btn-primary">ĐĂNG VIỆC</button>
                         </div>
                         <input type="hidden" name="_token" value="b24a119a7a7685aa26c1596950a34db4">
                     </form>
@@ -486,7 +485,7 @@
                     <div class="sidebar sidebar-right sidebar-post-job">
                         <div class="box box-freelancer">
                             <h3 class="heading lg">Top freelancer</h3>
-                            <a href="https://freelancerviet.vn/ho-so-freelancer.html" class="box-heading-right">Xem tất cả &gt;&gt;</a>
+                            <a href="#" class="box-heading-right">Xem tất cả &gt;&gt;</a>
                             <div class="content">
                                 <ul class="freelancer-featured list-unstyled">
                                     <li>
@@ -498,13 +497,13 @@
                                                 <ul class="media-stats list-unstyled horizontal">
                                                     <li>
                                                         <div class="rating-wrap">
-                                                            <div class="rating-container rating-xs rating-animate rating-disabled"><div class="rating"><span class="empty-stars"><span class="star"><i class="ion-android-star-outline"></i></span><span class="star"><i class="ion-android-star-outline"></i></span><span class="star"><i class="ion-android-star-outline"></i></span><span class="star"><i class="ion-android-star-outline"></i></span><span class="star"><i class="ion-android-star-outline"></i></span></span><span class="filled-stars" style="width: 80%;"><span class="star"><i class="ion-android-star"></i></span><span class="star"><i class="ion-android-star"></i></span><span class="star"><i class="ion-android-star"></i></span><span class="star"><i class="ion-android-star"></i></span><span class="star"><i class="ion-android-star"></i></span></span></div><input type="hidden" class="input-rating hide" data-size="xs" disabled="disabled" data-show-clear="false" data-show-caption="false" value="4"></div>
+                                                            <div class="rating-container rating-xs rating-animate rating-disabled"><div class="rating"><span class="empty-stars"><span class="star"><i class="fa fa-star" aria-hidden="true"></i></span><span class="star"><i class="fa fa-star" aria-hidden="true"></i></span><span class="star"><i class="fa fa-star" aria-hidden="true"></i></span><span class="star"><i class="fa fa-star" aria-hidden="true"></i></span><span class="star"><i class="fa fa-star" aria-hidden="true"></i></span></span></div><input type="hidden" class="input-rating hide" data-size="xs" disabled="disabled" data-show-clear="false" data-show-caption="false" value="4"></div>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         21 dự án                            </li>
                                                     <li>
-                                                        <i class="ion-ios-location-outline"></i> Hồ Chí Minh, VN                            </li>
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Hồ Chí Minh, VN                            </li>
                                                 </ul>
                                             </div>
                                             <a href="https://freelancerviet.vn/freelancer/144113-tran-hoai-minh.html" class="hover"><span>XEM HỒ SƠ</span></a>
@@ -519,13 +518,13 @@
                                                 <ul class="media-stats list-unstyled horizontal">
                                                     <li>
                                                         <div class="rating-wrap">
-                                                            <div class="rating-container rating-xs rating-animate rating-disabled"><div class="rating"><span class="empty-stars"><span class="star"><i class="ion-android-star-outline"></i></span><span class="star"><i class="ion-android-star-outline"></i></span><span class="star"><i class="ion-android-star-outline"></i></span><span class="star"><i class="ion-android-star-outline"></i></span><span class="star"><i class="ion-android-star-outline"></i></span></span><span class="filled-stars" style="width: 80%;"><span class="star"><i class="ion-android-star"></i></span><span class="star"><i class="ion-android-star"></i></span><span class="star"><i class="ion-android-star"></i></span><span class="star"><i class="ion-android-star"></i></span><span class="star"><i class="ion-android-star"></i></span></span></div><input type="hidden" class="input-rating hide" data-size="xs" disabled="disabled" data-show-clear="false" data-show-caption="false" value="4"></div>
+                                                            <div class="rating-container rating-xs rating-animate rating-disabled"><div class="rating"><span class="empty-stars"><span class="star"><i class="fa fa-star" aria-hidden="true"></i></span><span class="star"><i class="fa fa-star" aria-hidden="true"></i></span><span class="star"><i class="fa fa-star" aria-hidden="true"></i></span><span class="star"><i class="fa fa-star" aria-hidden="true"></i></span><span class="star"><i class="fa fa-star" aria-hidden="true"></i></span></span></div><input type="hidden" class="input-rating hide" data-size="xs" disabled="disabled" data-show-clear="false" data-show-caption="false" value="4"></div>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         12 dự án                            </li>
                                                     <li>
-                                                        <i class="ion-ios-location-outline"></i> Hồ Chí Minh, VN                            </li>
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Hồ Chí Minh, VN                            </li>
                                                 </ul>
                                             </div>
                                             <a href="https://freelancerviet.vn/freelancer/41584-nguyen-trong-huan.html" class="hover"><span>XEM HỒ SƠ</span></a>

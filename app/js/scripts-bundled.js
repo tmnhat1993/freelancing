@@ -128,6 +128,9 @@ function () {
         pause: 'hover'
       });
       $('.selectpicker').selectpicker({
+        width: 'fit'
+      });
+      $('.selectpicker-basic').selectpicker({
         width: '100%'
       });
       $('#phone_country_code').selectpicker({

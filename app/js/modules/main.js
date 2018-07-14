@@ -4,6 +4,7 @@ export default class MainScript {
   /* ============ CONSTRUCTOR ========== */
   constructor(){
     this.data = new Data();
+    this.quill
 
     this.bindEvent();
   }
@@ -17,12 +18,16 @@ export default class MainScript {
     });
 
     $('.selectpicker').selectpicker({
-      width: 'fit',
+      width: '100%',
     });
 
     $('#phone_country_code').selectpicker({
-      width: 'fit',
+      width: 'auto',
       liveSearch: 'true',
+    });
+
+    this.quill = new Quill('#extra-job-info-editor', {
+      theme: 'snow'
     });
   }
 

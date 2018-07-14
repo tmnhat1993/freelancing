@@ -8,6 +8,23 @@
     margin-top: 0;
   }
 
+  .sub-title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 0;
+    font-weight: 400;
+  }
+
+  &.section-page-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: #fff;
+  }
+
   &.bg-gray{
     background-color: #f7fafb !important;
   }

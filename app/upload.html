@@ -13,6 +13,10 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/vendors/bootstrap-select.min.css">
 
+    <!-- Quill Text Editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/styles.css">
     <!-- Main stylesheet Reference -->
 
@@ -113,7 +117,8 @@
 <!-- MAIN CONTENT -->
 <div id="content">
     <!-- Banner -->
-    <section class="section-main section-page-title " style="background-image: url(https://fvstaticws.freelancerviet.vn/fv3templates/default/images/banner/top-banner-3.png)">
+    <section class="section-main section-page-title"
+             style="background-image: url(https://fvstaticws.freelancerviet.vn/fv3templates/default/images/banner/top-banner-3.png)">
         <div class="container">
             <h1 class="page-title">Đăng việc</h1>
         </div>
@@ -154,73 +159,48 @@
                                         <small class="form-control-required">*</small>
                                     </label>
 
-                                    <!-- Main Select Box -->
-                                    <select name="category_id" id="category_id" class="form-control required dropdown-ajax select2 select2-hidden-accessible" data-api="https://freelancerviet.vn/job/job_categories/subcategory_options.html" data-target="#subcategory_id" data-callback="updateDynamicContent('#subcategory_id')" required="true" data-rule-required="true" data-theme="bootstrap4" data-minimum-results-for-search="-1" type="dropdown" tabindex="-1" aria-hidden="true" aria-required="true">
-                                        <option value="" selected="selected">Chọn danh mục lĩnh vực công việc bạn cần đăng</option>
-                                        <option value="657">Lập trình</option>
-                                        <option value="770">Dạy kèm</option>
-                                        <option value="672">Phần cứng, mạng, database</option>
-                                        <option value="764">Kế toán</option>
-                                        <option value="797">Tổ chức Sự kiện</option>
-                                        <option value="703">Viết lách</option>
-                                        <option value="761">Luật</option>
-                                        <option value="683">Thiết kế hình ảnh</option>
-                                        <option value="715">Dịch thuật</option>
-                                    </select>
-                                    <!-- Main Select Box -->
-
-                                    <span class="select2 select2-container select2-container--bootstrap4" dir="ltr" style="width: 636.656px;">
-                                        <span class="selection">
-                                            <span class="select2-selection select2-selection--single"
-                                                  role="combobox"
-                                                  aria-haspopup="true"
-                                                  aria-expanded="false"
-                                                  tabindex="0"
-                                                  aria-labelledby="select2-category_id-container">
-                                                <span class="select2-selection__rendered"
-                                                      id="select2-category_id-container"
-                                                      title="Chọn danh mục lĩnh vực công việc bạn cần đăng">
-                                                    Chọn danh mục lĩnh vực công việc bạn cần đăng
-                                                </span>
-                                                <span class="select2-selection__arrow" role="presentation">
-                                                    <b role="presentation">
-
-                                                    </b>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="dropdown-wrapper" aria-hidden="true">
-
-                                        </span>
-                                    </span>
-
-
-                                    <select name="subcategory_id" id="subcategory_id" class="form-control required select2 select2-hidden-accessible" required="true" data-rule-required="true" data-theme="bootstrap4" data-minimum-results-for-search="-1" type="dropdown" onchange="updateDynamicContent(this)" tabindex="-1" aria-hidden="true" aria-required="true">
-                                        <option value="" selected="selected">Chọn loại công việc</option>
-                                    </select>
-                                    <span class="select2 select2-container select2-container--bootstrap4" dir="ltr" style="width: 636.656px;">
-                                        <span class="selection">
-                                            <span class="select2-selection select2-selection--single"
-                                                  role="combobox"
-                                                  aria-haspopup="true"
-                                                  aria-expanded="false"
-                                                  tabindex="0"
-                                                  aria-labelledby="select2-subcategory_id-container">
-                                                <span class="select2-selection__rendered"
-                                                      id="select2-subcategory_id-container"
-                                                      title="Chọn loại công việc">
-                                                    Chọn loại công việc
-                                                </span>
-                                                <span class="select2-selection__arrow"
-                                                      role="presentation">
-                                                    <b role="presentation">
-
-                                                    </b>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span class="dropdown-wrapper" aria-hidden="true"></span>
-                                    </span>
+                                    <div class="form-row">
+                                        <!-- Main Select Box -->
+                                        <select name="category_id" id="category_id"
+                                                class="form-control required selectpicker selectpicker-basic"
+                                                data-api="https://freelancerviet.vn/job/job_categories/subcategory_options.html"
+                                                data-target="#subcategory_id" data-callback="updateDynamicContent('#subcategory_id')"
+                                                required="true" data-rule-required="true" data-theme="bootstrap4"
+                                                data-minimum-results-for-search="-1"
+                                                type="dropdown" tabindex="-1"
+                                                aria-hidden="true"
+                                                aria-required="true">
+                                            <option value="" selected="selected">Chọn danh mục lĩnh vực công việc bạn cần đăng</option>
+                                            <option value="657">Lập trình</option>
+                                            <option value="770">Dạy kèm</option>
+                                            <option value="672">Phần cứng, mạng, database</option>
+                                            <option value="764">Kế toán</option>
+                                            <option value="797">Tổ chức Sự kiện</option>
+                                            <option value="703">Viết lách</option>
+                                            <option value="761">Luật</option>
+                                            <option value="683">Thiết kế hình ảnh</option>
+                                            <option value="715">Dịch thuật</option>
+                                        </select>
+                                        <!-- Main Select Box -->
+                                    </div>
+                                    <div class="form-row">
+                                        <!-- Sub Select Box -->
+                                        <select name="subcategory_id"
+                                                id="subcategory_id"
+                                                class="form-control required selectpicker selectpicker-basic"
+                                                required="true"
+                                                data-rule-required="true"
+                                                data-theme="bootstrap4"
+                                                data-minimum-results-for-search="-1"
+                                                type="dropdown"
+                                                onchange="updateDynamicContent(this)"
+                                                tabindex="-1"
+                                                aria-hidden="true"
+                                                aria-required="true">
+                                            <option value="" selected="selected">Chọn loại công việc</option>
+                                        </select>
+                                        <!-- Sub Select Box -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -243,11 +223,19 @@
                                     </div>
                                     <div class="col-sm-10">
                                         <label for="" class="form-control-label md">Các yêu cầu khác <small class="form-control-required">*</small></label>
-                                        <div class="rich-text-editor" data-height="130">
-                                            <textarea name="answers[1][1][]" cols="40" rows="10" id="answers11" class="form-control required" required="true" data-rule-required="true" type="textarea" placeholder="" aria-required="true" style="display: none;"></textarea><div class="note-editor note-frame panel panel-default"><div class="note-dropzone">  <div class="note-dropzone-message"></div></div><div class="note-toolbar panel-heading"><div class="note-btn-group btn-group note-main"><button type="button" class="note-btn btn btn-default btn-sm note-btn-bold" tabindex="-1" title="" data-original-title="Bold (⌘+B)"><i class="note-icon-bold"></i></button><button type="button" class="note-btn btn btn-default btn-sm note-btn-italic" tabindex="-1" title="" data-original-title="Italic (⌘+I)"><i class="note-icon-italic"></i></button><button type="button" class="note-btn btn btn-default btn-sm note-btn-underline" tabindex="-1" title="" data-original-title="Underline (⌘+U)"><i class="note-icon-underline"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Unordered list (⌘+⇧+NUM7)"><i class="note-icon-unorderedlist"></i></button></div></div><div class="note-editing-area"><div class="note-handle"><div class="note-control-selection"><div class="note-control-selection-bg"></div><div class="note-control-holder note-control-nw"></div><div class="note-control-holder note-control-ne"></div><div class="note-control-holder note-control-sw"></div><div class="note-control-sizing note-control-se"></div><div class="note-control-selection-info"></div></div></div><textarea class="note-codable"></textarea><div class="note-editable panel-body" contenteditable="true" style="height: 130px;"><p><br></p></div></div><div class="note-statusbar">  <div class="note-resizebar">    <div class="note-icon-bar"></div>    <div class="note-icon-bar"></div>    <div class="note-icon-bar"></div>  </div></div><div class="modal link-dialog" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Link</h4>    </div>    <div class="modal-body"><div class="form-group note-form-group"><label class="note-form-label">Text to display</label><input class="note-link-text form-control  note-form-control  note-input" type="text"></div><div class="form-group note-form-group"><label class="note-form-label">To what URL should this link go?</label><input class="note-link-url form-control note-form-control note-input" type="text" value="http://"></div><div class="checkbox"> <label for="sn-checkbox-open-in-new-window"> <input type="checkbox" id="sn-checkbox-open-in-new-window" checked="">Open in new window</label></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-btn note-btn-primary note-link-btn disabled" disabled="">Insert Link</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Image</h4>    </div>    <div class="modal-body"><div class="form-group note-form-group note-group-select-from-files"><label class="note-form-label">Select from files</label><input class="note-image-input form-control note-form-control note-input" type="file" name="files" accept="image/*" multiple="multiple"></div><div class="form-group note-group-image-url" style="overflow:auto;"><label class="note-form-label">Image URL</label><input class="note-image-url form-control note-form-control note-input  col-md-12" type="text"></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-btn note-btn-primary note-image-btn disabled" disabled="">Insert Image</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Video</h4>    </div>    <div class="modal-body"><div class="form-group note-form-group row-fluid"><label class="note-form-label">Video URL? <small class="text-muted">(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)</small></label><input class="note-video-url form-control  note-form-control note-input span12" type="text"></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-btn note-btn-primary  note-video-btn disabled" disabled="">Insert Video</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Help</h4>    </div>    <div class="modal-body" style="max-height: 300px; overflow: scroll;"><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>ENTER</kbd></label><span>Insert Paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+Z</kbd></label><span>Undoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+Z</kbd></label><span>Redoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>TAB</kbd></label><span>Tab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>SHIFT+TAB</kbd></label><span>Untab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+B</kbd></label><span>Set a bold style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+I</kbd></label><span>Set a italic style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+U</kbd></label><span>Set a underline style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+S</kbd></label><span>Set a strikethrough style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+BACKSLASH</kbd></label><span>Clean a style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+L</kbd></label><span>Set left align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+E</kbd></label><span>Set center align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+R</kbd></label><span>Set right align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+J</kbd></label><span>Set full align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+NUM7</kbd></label><span>Toggle unordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+NUM8</kbd></label><span>Toggle ordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+LEFTBRACKET</kbd></label><span>Outdent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+RIGHTBRACKET</kbd></label><span>Indent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM0</kbd></label><span>Change current block's format as a paragraph(P tag)</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM1</kbd></label><span>Change current block's format as H1</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM2</kbd></label><span>Change current block's format as H2</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM3</kbd></label><span>Change current block's format as H3</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM4</kbd></label><span>Change current block's format as H4</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM5</kbd></label><span>Change current block's format as H5</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM6</kbd></label><span>Change current block's format as H6</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+ENTER</kbd></label><span>Insert horizontal rule</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+K</kbd></label><span>Show Link Dialog</span></div>    <div class="modal-footer"><p class="text-center"><a href="http://summernote.org/" target="_blank">Summernote 0.8.8</a> · <a href="https://github.com/summernote/summernote" target="_blank">Project</a> · <a href="https://github.com/summernote/summernote/issues" target="_blank">Issues</a></p></div>  </div></div></div></div>
-                                        </div>		</div>
+
+                                        <div class="editor-holder">
+                                            <!-- Text Editor Setup HTML -->
+                                            <div class="quill-editor" id="extra-job-info-editor">
+
+                                            </div>
+                                            <!-- Text Editor Setup HTML -->
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="form-group form-group-number">
                                 <div class="row">
                                     <div class="col-sm-auto">
@@ -255,16 +243,17 @@
                                     </div>
                                     <div class="col-sm-10">
                                         <label for="" class="form-control-label md">Bạn cần khi nào <small class="form-control-required">*</small></label>
-                                        <select name="answers[1][2][]" id="answers12" class="form-control required select2 select2-hidden-accessible" required="true" data-rule-required="true" type="dropdown" data-minimum-results-for-search="-1" data-theme="bootstrap4" tabindex="-1" aria-hidden="true" aria-required="true">
+                                        <select name="answers[1][2][]" id="answers12" class="form-control required selectpicker selectpicker-basic" required="true" data-rule-required="true" type="dropdown" data-minimum-results-for-search="-1" data-theme="bootstrap4" tabindex="-1" aria-hidden="true" aria-required="true">
                                             <option value="1">1 ngày</option>
                                             <option value="3">3 ngày</option>
                                             <option value="7">7 ngày</option>
                                             <option value="14">2 tuần</option>
                                             <option value="30">1 tháng</option>
-                                        </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" style="width: 636.656px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-answers12-container"><span class="select2-selection__rendered" id="select2-answers12-container" title="1 ngày">1 ngày</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="form-group form-group-number">
                                 <div class="row">
                                     <div class="col-sm-auto">
@@ -273,39 +262,46 @@
                                     <div class="col-sm-10">
                                         <label for="" class="form-control-label md">Bạn cần freelancer ở đâu <small class="form-control-required">*</small></label>
                                         <div class="row">
-                                            <div class="col-lg-6"><select name="answers[1][3][country]" id="country_id" class="form-control required select2 select2-hidden-accessible" data-rule-required="true" onchange="changeCountry(this)" required="true" type="dropdown" data-theme="bootstrap4" tabindex="-1" aria-hidden="true" aria-required="true">
-                                                <option value="">Chọn quốc gia</option>
-                                                <option value="253">South Sudan</option>
-                                                <option value="252">Sint Maarten</option>
-                                                <option value="251">Saint Martin</option>
-                                                <option value="250">Saint Barthelemy</option>
-                                                <option value="249">Kosovo</option>
-                                                <option value="248">Jersey</option>
-                                            </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" style="width: 303.328px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-country_id-container"><span class="select2-selection__rendered" id="select2-country_id-container" title="Viet Nam">Viet Nam</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                            <div class="col-lg-6">
+                                                <!-- Select Picker - Select Country -->
+                                                <select name="answers[1][3][country]"
+                                                        id="country_id"
+                                                        class="form-control required selectpicker selectpicker-basic"
+                                                        data-rule-required="true">
+                                                    <option value="">Chọn quốc gia</option>
+                                                    <option value="253">South Sudan</option>
+                                                    <option value="252">Sint Maarten</option>
+                                                    <option value="251">Saint Martin</option>
+                                                    <option value="250">Saint Barthelemy</option>
+                                                    <option value="249">Kosovo</option>
+                                                    <option value="248">Jersey</option>
+                                                </select>
+                                                <!-- Select Picker - Select Country -->
                                             </div>
-                                            <div class="col-lg-6 address-has-province"><select name="answers[1][3][province]" class="form-control required select2 select2-hidden-accessible" data-minimum-results-for-search="-1" data-rule-required="true" required="true" type="dropdown" data-theme="bootstrap4" tabindex="-1" aria-hidden="true" aria-required="true">
-                                                <option value="">Tỉnh/ thành phố</option>
-                                                <option value="22">Hồ Chí Minh</option>
-                                                <option value="33">Đà Nẵng</option>
-                                                <option value="52">An Giang</option>
-                                                <option value="62">Bà Rịa - Vũng Tàu </option>
-                                                <option value="71">Bắc Cạn </option>
-                                                <option value="80">Bắc Giang </option>
-                                                <option value="91">Bạc Liêu </option>
-                                                <option value="98">Bắc Ninh </option>
-                                                <option value="107">Bến Tre </option>
-                                                <option value="117">Bình Định </option>
-                                                <option value="129">Bình Dương </option>
-                                                <option value="137">Bình Phước </option>
-                                                <option value="148">Bình Thuận </option>
-                                                <option value="159">Cà Mau </option>
-                                            </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" style="width: 303.328px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-answers13province-tk-container"><span class="select2-selection__rendered" id="select2-answers13province-tk-container" title="Tỉnh/ thành phố">Tỉnh/ thành phố</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                            </div>
-                                            <div class="col-lg-6 address-no-province" style="display: none;"><input type="text" name="answers[1][3][state]" value="" class="form-control required" data-rule-required="true" required="true" placeholder="Tiểu bang" aria-required="true">
+
+                                            <div class="col-lg-6 address-has-province">
+                                                <!-- Select Picker - Select Province -->
+                                                <select name="answers[1][3][province]"
+                                                        class="form-control required selectpicker selectpicker-basic">
+                                                    <option value="">Tỉnh/ thành phố</option>
+                                                    <option value="22">Hồ Chí Minh</option>
+                                                    <option value="33">Đà Nẵng</option>
+                                                    <option value="52">An Giang</option>
+                                                    <option value="62">Bà Rịa - Vũng Tàu </option>
+                                                    <option value="71">Bắc Cạn </option>
+                                                    <option value="80">Bắc Giang </option>
+                                                    <option value="91">Bạc Liêu </option>
+                                                    <option value="98">Bắc Ninh </option>
+                                                    <option value="107">Bến Tre </option>
+                                                    <option value="117">Bình Định </option>
+                                                    <option value="129">Bình Dương </option>
+                                                    <option value="137">Bình Phước </option>
+                                                    <option value="148">Bình Thuận </option>
+                                                    <option value="159">Cà Mau </option>
+                                                </select>
+                                                <!-- Select Picker - Select Province -->
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -315,27 +311,45 @@
                                         <span class="form-control-number">6</span>
                                     </div>
                                     <div class="col-sm-10">
-                                        <label for="" class="form-control-label md">Ngân sách dự kiến <small class="form-control-required">*</small></label>
+                                        <label for="" class="form-control-label md">
+                                            Ngân sách dự kiến
+                                            <small class="form-control-required">*</small>
+                                        </label>
                                         <div class="form-inline dropdown-job-price">
-                                            <select name="answers[1][4][currency]" id="answers14child" class="form-control select2 select-currency select2-hidden-accessible" type="dropdown" data-minimum-results-for-search="-1" data-theme="bootstrap4" data-width="60px" onchange="changeCurrency(this)" data-target="#answers14" tabindex="-1" aria-hidden="true">
-                                                <option value="vnd" selected="selected">₫</option>
-                                            </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" style="width: 60px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-answers14child-container"><span class="select2-selection__rendered" id="select2-answers14child-container" title="₫">₫</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                            <select name="answers[1][4][price]" id="answers14" class="form-control required select2 select2-hidden-accessible" required="true" data-rule-required="true" type="dropdown" data-minimum-results-for-search="-1" data-theme="bootstrap4" data-width="350px" tabindex="-1" aria-hidden="true" aria-required="true">
-                                                <option value="" selected="selected">Chọn mức ngân sách dự kiến</option>
-                                                <option value="1">₫100,000 - ₫500,000</option>
-                                                <option value="2">₫500,000 - ₫2,000,000</option>
-                                                <option value="3">₫2,000,000 - ₫4,000,000</option>
-                                                <option value="4">₫4,000,000 - ₫6,000,000</option>
-                                                <option value="5">₫6,000,000 - ₫8,000,000</option>
-                                                <option value="6">₫8,000,000 - ₫10,000,000</option>
-                                                <option value="7">₫10,000,000 - ₫15,000,000</option>
-                                                <option value="8">₫15,000,000 - ₫20,000,000</option>
-                                                <option value="9">₫20,000,000 - ₫25,000,000</option>
-                                                <option value="10">₫25,000,000 - ₫30,000,000</option>
-                                                <option value="11">₫30,000,000 - ₫40,000,000</option>
-                                                <option value="12">₫40,000,000 - ₫50,000,000</option>
-                                                <option value="13">&gt; ₫50,000,000</option>
-                                            </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" style="width: 350px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-answers14-container"><span class="select2-selection__rendered" id="select2-answers14-container" title="Chọn mức ngân sách dự kiến">Chọn mức ngân sách dự kiến</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                            <!-- Select Picker Select Currency -->
+                                            <div class="col-sm-auto">
+                                                <select name="answers[1][4][currency]"
+                                                        id="answers14child"
+                                                        class="form-control select-currency selectpicker selectpicker-basic">
+                                                    <option value="vnd" selected="selected">₫</option>
+                                                </select>
+                                            </div>
+                                            <!-- Select Picker Select Currency -->
+
+
+                                            <!-- Select Picker Select Budget -->
+                                            <div class="col-sm-8">
+                                                <select name="answers[1][4][price]"
+                                                        id="answers14"
+                                                        class="form-control required selectpicker selectpicker-basic"
+                                                        required="true">
+                                                    <option value="" selected="selected">Chọn mức ngân sách dự kiến</option>
+                                                    <option value="1">₫100,000 - ₫500,000</option>
+                                                    <option value="2">₫500,000 - ₫2,000,000</option>
+                                                    <option value="3">₫2,000,000 - ₫4,000,000</option>
+                                                    <option value="4">₫4,000,000 - ₫6,000,000</option>
+                                                    <option value="5">₫6,000,000 - ₫8,000,000</option>
+                                                    <option value="6">₫8,000,000 - ₫10,000,000</option>
+                                                    <option value="7">₫10,000,000 - ₫15,000,000</option>
+                                                    <option value="8">₫15,000,000 - ₫20,000,000</option>
+                                                    <option value="9">₫20,000,000 - ₫25,000,000</option>
+                                                    <option value="10">₫25,000,000 - ₫30,000,000</option>
+                                                    <option value="11">₫30,000,000 - ₫40,000,000</option>
+                                                    <option value="12">₫40,000,000 - ₫50,000,000</option>
+                                                    <option value="13">&gt; ₫50,000,000</option>
+                                                </select>
+                                            </div>
+                                            <!-- Select Picker Select Budget -->
                                         </div>
                                     </div>
                                 </div>
@@ -742,6 +756,9 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/bootstrap-select.min.js"></script>
+
+<!-- Quill Text Editor -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
 <!-- Main Script -->
 <script src="js/scripts-bundled.js"></script>

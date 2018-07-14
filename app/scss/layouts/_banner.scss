@@ -75,6 +75,12 @@
   background-color: transparent;
   color: #fff;
 
+  .form-group {
+    max-width: 740px;
+    width: 100%;
+    margin: 30px auto 0 auto;
+  }
+
   &>div{
     position: relative;
     z-index: 2;
@@ -96,5 +102,37 @@
     z-index: 1;
     width: 100%;
     height: 100%;
+  }
+}
+
+.input-search  {
+  .input-group-btn {
+    &.btn {
+      border-color: #d0d7d9;
+      height: 48px;
+      text-align: center;
+      border-left-color: transparent;
+      background-color: #fff;
+    }
+  }
+
+  &.search-highlight{
+    .btn{
+      background-color: #2e8ae1;
+      color: #fff;
+      border-color: #2e8ae1;
+      padding-left: 44px;
+      padding-right: 44px;
+
+      &:hover,
+      &:focus,
+      &:active{
+        background-color: #2e8ae1;
+        color: #fff;
+        border-color: #2e8ae1;
+        padding-left: 44px;
+        padding-right: 44px;
+      }
+    }
   }
 }

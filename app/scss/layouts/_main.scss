@@ -1,0 +1,17 @@
+.small-icon, .medium-icon, .medium-3-icon, .large-icon, .medium-2-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.small-icon.icon-verify,
+.medium-icon.icon-verify,
+.medium-3-icon.icon-verify,
+.large-icon.icon-verify,
+.medium-2-icon.icon-verify {
+  background-image: url(../img/icon/icon-verify.png);
+}

@@ -1,6 +1,10 @@
 .media-list-wrap {
   padding-left: 40px;
 
+  @media (max-width: 991px){
+    padding-left: 0px;
+  }
+
   .item-title {
     font-size: 18px;
     font-weight: 500;
@@ -352,4 +356,23 @@
   color: #e67e22;
   -webkit-text-stroke: 0 transparent;
   text-shadow: none;
+}
+
+.media-body{
+  max-width: 100%;
+}
+
+.media-list-wrap .item-title a {
+  color: #2e8ae1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.media-stats.horizontal > li {
+  max-width: 48px;
+  white-space: normal;
+
+  @media (max-width: 767px){
+    max-width: none;
+  }
 }

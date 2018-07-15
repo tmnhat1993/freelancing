@@ -144,6 +144,10 @@
   display: inline-block;
   margin: 0 3px;
   text-align: center;
+
+  @media (max-width: 767px){
+    margin: 0 -2px 0 0;
+  }
 }
 
 .media-freelancer-list .media-stats.horizontal>li i {
@@ -226,4 +230,46 @@
 .section-post-job .sidebar {
   padding-left: 30px;
   border-left: 1px solid #d0d7d9;
+}
+
+
+.media-list-wrap .media-stats.style-2>li {
+  @media (max-width: 991px) {
+    border-right: 0 none;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    margin-right:0;
+  }
+}
+
+.input-search.search-highlight {
+  @media (max-width: 480px) {
+    display: block;
+  }
+}
+
+.input-search.search-highlight .form-control, .input-search.search-highlight .input-group-btn {
+  @media (max-width: 480px) {
+    display: block;
+    border-radius: 4px;
+    width: 100%;
+    float: none;
+  }
+}
+
+.input-search.search-highlight .input-group-append {
+  @media (max-width: 480px) {
+    margin-left: 0;
+  }
+}
+
+.input-group > .custom-select:not(:last-child),
+.input-group > .form-control:not(:last-child) {
+  @media (max-width: 480px){
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    height: 48px;
+    font-size: 16px;
+  }
 }

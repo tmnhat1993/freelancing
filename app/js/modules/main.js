@@ -4,7 +4,6 @@ export default class MainScript {
   /* ============ CONSTRUCTOR ========== */
   constructor(){
     this.data = new Data();
-    this.quill
 
     this.bindEvent();
   }
@@ -29,10 +28,6 @@ export default class MainScript {
     $('#phone_country_code').selectpicker({
       width: 'auto',
       liveSearch: 'true',
-    });
-
-    this.quill = new Quill('#extra-job-info-editor', {
-      theme: 'snow'
     });
   }
 

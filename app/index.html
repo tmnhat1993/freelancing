@@ -20,17 +20,17 @@
 <body>
 
 <!-- NAVIGATION -->
-<header id="header" class="fixed-top over">
+<header id="header" class="fixed-top transparent">
     <div class="container">
         <nav class="navbar navbar-header navbar-mainmenu navbar-expand-lg">
             <a class="navbar-brand" href="https://freelancerviet.vn/trang-chu.html">
                 <img class="navbar-brand-white" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo.png" alt="freelancerViet">
                 <img class="navbar-brand-normal" src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/logo-2.png" alt="freelancerViet">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse show" id="navbarCollapse" style="">
+            <div class="navbar-collapse collapse" id="navbarCollapse" style="">
                 <ul class="navbar-nav mr-auto pl-lg-5">
                     <li class="multi-childs show-mobile">
                         <a href="https://freelancerviet.vn/dang-ky.html"><span>Đăng ký</span></a>
@@ -73,13 +73,23 @@
                         <span>|</span>
                         <a href="https://freelancerviet.vn/dang-nhap.html"><span>Đăng nhập</span></a>
                     </li>					                        <li class="dropdown dropdown-right language dropdown-hover hide-mobile">
-                    <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                         <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt="">
                     </a>
                     <ul class="dropdown-menu " role="menu">
-                        <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/vi.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt=""> <span>Vietnamese</span></a></li>
-                        <li class="nav-item "><a class="nav-link" href="https://freelancerviet.vn/en.html"><img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt=""> <span>English</span></a></li>
-                    </ul>					    </li>
+                        <li class="nav-item "
+                        ><a class="nav-link" href="https://freelancerviet.vn/vi.html">
+                            <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/vi_2.png" alt="">
+                            <span>Vietnamese</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="https://freelancerviet.vn/en.html">
+                                <img src="https://fvstaticws.freelancerviet.vn/fv3templates/default/images/languages/en_2.png" alt="">
+                                <span>English</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 </ul>
             </div>
         </nav>
@@ -1112,6 +1122,18 @@
     <!-- Main Script -->
     <script src="js/scripts-bundled.js"></script>
     <!-- Main Script - END -->
+
+    <script>
+      $(document).ready(function() {
+        $(window).scroll( function() {
+          if ($(window).scrollTop() > 150){
+            $('#header').addClass('over')
+          } else {
+            $('#header').removeClass('over')
+          }
+        })
+      })
+    </script>
 <!-- Scripts Reference - END -->
 </body>
 </html>

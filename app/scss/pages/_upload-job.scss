@@ -436,3 +436,41 @@
   margin-left: auto;
 }
 
+.form-auth-embed .heading .col-right .heading-controls {
+  @media (max-width: 767px) {
+    text-align: left !important;
+  }
+}
+
+.form .form-control {
+  height: 42px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 16px;
+  color: #586269;
+}
+
+.section-post-job .sidebar {
+  @media (max-width: 767px) {
+    padding-left: 0;
+    border-left: none 0;
+    margin-top: 30px;
+  }
+}
+
+.box .box-heading-right {
+  @media (max-width: 991px) {
+    float: none !important;
+    margin-bottom: 20px;
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.sidebar-right .box .heading {
+  @media (max-width: 991px) {
+    display: block;
+    margin-bottom: 7px;
+  }
+}

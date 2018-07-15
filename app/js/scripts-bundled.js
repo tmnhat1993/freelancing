@@ -113,7 +113,6 @@ function () {
     _classCallCheck(this, MainScript);
 
     this.data = new _data.default();
-    this.quill;
     this.bindEvent();
   }
   /* ============ EVENTS ===========*/
@@ -136,9 +135,6 @@ function () {
       $('#phone_country_code').selectpicker({
         width: 'auto',
         liveSearch: 'true'
-      });
-      this.quill = new Quill('#extra-job-info-editor', {
-        theme: 'snow'
       });
     }
     /* =========== METHODS ========== */

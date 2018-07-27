@@ -302,6 +302,12 @@
   border-radius: 2px;
   cursor: default;
   white-space: nowrap;
+
+  &.status-success {
+    background-color: #fff;
+    color: #27ae60;
+    border-color: #27ae60;
+  }
 }
 
 .media-list-heading {
@@ -375,4 +381,29 @@
   @media (max-width: 767px){
     max-width: none;
   }
+}
+
+.pb-3, .py-3 {
+  padding-bottom: 1rem !important;
+}
+
+.mb-1, .my-1 {
+  margin-bottom: .25rem !important;
+}
+
+.align-items-start {
+  -webkit-box-align: start !important;
+  -ms-flex-align: start !important;
+  align-items: flex-start !important;
+}
+
+
+.social-icon.li {
+  background-image: url(../img/icon/icon-li-auth.png);
+}
+.social-icon.fb {
+  background-image: url(../img/icon/icon-fb-auth.png);
+}
+.social-icon.gg {
+  background-image: url(../img/icon/icon-gg-auth.png);
 }
